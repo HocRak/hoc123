@@ -262,7 +262,7 @@ namespace Project___Review_RBT
         {
             if (int.TryParse(textBox_delete.Text, out int value))
             {
-                deletenode = new RedBlackNode(value);
+                deletenode = tree.FindNode(tree.Root, value);
 
                 explanationSteps = new List<string>(); // Đặt lại danh sách các bước giải thích
                 currentExplanationIndex = 0;
@@ -284,17 +284,18 @@ namespace Project___Review_RBT
                 {
                     Label_Explanation.Text = $"Cây rỗng. Không thể xóa";
                 }
-
             }
             else
             {
                 MessageBox.Show("Hãy nhập một số nguyên hợp lệ.");
             }
         }
-
+        /// <summary>
+        /// Gọi thể hiện việc xóa
+        /// </summary>
         private void PerformDelete()
         {
-            tree.Delete(deletenode, explanationSteps, Delete_Node_Timer);
+            tree.Delete(deletenode, explanationSteps, Delete_Node_Timer,Completed_Animation);
         }
         /// <summary>
         /// Hàm thể hiện kết quả xóa 1 nút
@@ -305,11 +306,15 @@ namespace Project___Review_RBT
             int value = int.Parse(textBox_delete.Text);
             if (value != currentNode.Value)
             {
-                Label_Explanation.Text = $"Không tồn tại nút {value}, không thể xóa";
+                Label_Explanation.Text = $"Không tồn tại nút {value} \n không thể xóa";
                 return false;
             }
             return true;
         }
+
+        /// <summary>
+        /// Xóa nút
+        /// </summary>
 
         private void Delete_Node_Timer_Tick(object sender, EventArgs e)
         {
@@ -330,6 +335,36 @@ namespace Project___Review_RBT
             if (allNodesStable)
             {
                 Delete_Node_Timer.Stop();
+                ToggleControls(true);
+            }
+        }
+
+        /// <summary>
+        /// Timer hoàn tất cân bằng cây
+        /// </summary>
+
+        private void Completed_Animation_Tick(object sender, EventArgs e)
+        {
+            Label_Explanation.Text = explanationSteps[explanationSteps.Count - 1];
+            bool allNodesStable = true;
+            // Gọi phương thức MoveTowardsTarget cho tất cả các nút
+            foreach (var node in tree.GetAllNodes())
+            {
+                node.MoveTowardsTarget(step);
+                // Kiểm tra nếu nút vẫn chưa ổn định
+                if (node.X != node.TargetX || node.Y != node.TargetY)
+                {
+                    allNodesStable = false;
+                }
+                // Vẽ lại panel
+                panel_main.Invalidate();
+            }
+            if (allNodesStable)
+            {
+                Completed_Animation.Stop();
+                explanationSteps.Add($"Hoàn tất xóa nút {deletenode.Value}.");
+                Label_Explanation.Text = explanationSteps[explanationSteps.Count - 1];
+                ToggleControls(true);
             }
         }
         #endregion
@@ -437,14 +472,8 @@ namespace Project___Review_RBT
 
         #endregion
 
-        private void label2_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

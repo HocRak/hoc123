@@ -1,0 +1,145 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Documents\\T\u00E0i li\u1EC7u\\Documents\\DoAnTrenGit\\hoc123\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3373FAB9-2695-4C6F-BBDA-2147D74DAD1E}|GiaoDienHeThong\\GiaoDienHeThong.csproj|c:\\users\\admin\\documents\\t\u00E0i li\u1EC7u\\documents\\doantrengit\\hoc123\\giaodienhethong\\cautrucdulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3373FAB9-2695-4C6F-BBDA-2147D74DAD1E}|GiaoDienHeThong\\GiaoDienHeThong.csproj|solutionrelative:giaodienhethong\\cautrucdulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3373FAB9-2695-4C6F-BBDA-2147D74DAD1E}|GiaoDienHeThong\\GiaoDienHeThong.csproj|c:\\users\\admin\\documents\\t\u00E0i li\u1EC7u\\documents\\doantrengit\\hoc123\\giaodienhethong\\cautrucdulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3373FAB9-2695-4C6F-BBDA-2147D74DAD1E}|GiaoDienHeThong\\GiaoDienHeThong.csproj|solutionrelative:giaodienhethong\\cautrucdulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC41BB09-96FE-43E3-8F75-E2AAA93B0BF7}|OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\banluu.csproj|c:\\users\\admin\\documents\\t\u00E0i li\u1EC7u\\documents\\doantrengit\\hoc123\\openhashing cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AC41BB09-96FE-43E3-8F75-E2AAA93B0BF7}|OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\banluu.csproj|solutionrelative:openhashing cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC41BB09-96FE-43E3-8F75-E2AAA93B0BF7}|OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\banluu.csproj|c:\\users\\admin\\documents\\t\u00E0i li\u1EC7u\\documents\\doantrengit\\hoc123\\openhashing cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC41BB09-96FE-43E3-8F75-E2AAA93B0BF7}|OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\banluu.csproj|solutionrelative:openhashing cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3373FAB9-2695-4C6F-BBDA-2147D74DAD1E}|GiaoDienHeThong\\GiaoDienHeThong.csproj|c:\\users\\admin\\documents\\t\u00E0i li\u1EC7u\\documents\\doantrengit\\hoc123\\giaodienhethong\\quenmatkhau.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3373FAB9-2695-4C6F-BBDA-2147D74DAD1E}|GiaoDienHeThong\\GiaoDienHeThong.csproj|solutionrelative:giaodienhethong\\quenmatkhau.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC41BB09-96FE-43E3-8F75-E2AAA93B0BF7}|OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\banluu.csproj|c:\\users\\admin\\documents\\t\u00E0i li\u1EC7u\\documents\\doantrengit\\hoc123\\openhashing cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC41BB09-96FE-43E3-8F75-E2AAA93B0BF7}|OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\banluu.csproj|solutionrelative:openhashing cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\T\u00E0i li\u1EC7u\\Documents\\DoAnTrenGit\\hoc123\\OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\Form1.cs",
+              "RelativeDocumentMoniker": "OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\Form1.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\T\u00E0i li\u1EC7u\\Documents\\DoAnTrenGit\\hoc123\\OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\Form1.cs*",
+              "RelativeToolTip": "OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\Form1.cs*",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwBEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T10:32:38.269Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CauTrucDuLieu.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\T\u00E0i li\u1EC7u\\Documents\\DoAnTrenGit\\hoc123\\GiaoDienHeThong\\CauTrucDuLieu.cs",
+              "RelativeDocumentMoniker": "GiaoDienHeThong\\CauTrucDuLieu.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\T\u00E0i li\u1EC7u\\Documents\\DoAnTrenGit\\hoc123\\GiaoDienHeThong\\CauTrucDuLieu.cs*",
+              "RelativeToolTip": "GiaoDienHeThong\\CauTrucDuLieu.cs*",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAtwGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T10:37:34.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CauTrucDuLieu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\T\u00E0i li\u1EC7u\\Documents\\DoAnTrenGit\\hoc123\\GiaoDienHeThong\\CauTrucDuLieu.cs",
+              "RelativeDocumentMoniker": "GiaoDienHeThong\\CauTrucDuLieu.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\T\u00E0i li\u1EC7u\\Documents\\DoAnTrenGit\\hoc123\\GiaoDienHeThong\\CauTrucDuLieu.cs [Design]*",
+              "RelativeToolTip": "GiaoDienHeThong\\CauTrucDuLieu.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T10:37:24.108Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\T\u00E0i li\u1EC7u\\Documents\\DoAnTrenGit\\hoc123\\OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\T\u00E0i li\u1EC7u\\Documents\\DoAnTrenGit\\hoc123\\OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\Form1.Designer.cs*",
+              "RelativeToolTip": "OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\Form1.Designer.cs*",
+              "ViewState": "AgIAACUBAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T10:32:40.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QuenMatKhau.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\T\u00E0i li\u1EC7u\\Documents\\DoAnTrenGit\\hoc123\\GiaoDienHeThong\\QuenMatKhau.Designer.cs",
+              "RelativeDocumentMoniker": "GiaoDienHeThong\\QuenMatKhau.Designer.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\T\u00E0i li\u1EC7u\\Documents\\DoAnTrenGit\\hoc123\\GiaoDienHeThong\\QuenMatKhau.Designer.cs",
+              "RelativeToolTip": "GiaoDienHeThong\\QuenMatKhau.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T10:30:51.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\T\u00E0i li\u1EC7u\\Documents\\DoAnTrenGit\\hoc123\\OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\Form1.cs",
+              "RelativeDocumentMoniker": "OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\Form1.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\T\u00E0i li\u1EC7u\\Documents\\DoAnTrenGit\\hoc123\\OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\Form1.cs [Design]*",
+              "RelativeToolTip": "OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\Form1.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T10:28:10.957Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

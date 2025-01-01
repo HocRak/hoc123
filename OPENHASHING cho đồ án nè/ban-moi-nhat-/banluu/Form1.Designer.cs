@@ -64,8 +64,6 @@
             trackBarDelay = new System.Windows.Forms.TrackBar();
             label22 = new System.Windows.Forms.Label();
             panel3 = new System.Windows.Forms.Panel();
-            panel4 = new System.Windows.Forms.Panel();
-            label23 = new System.Windows.Forms.Label();
             label24 = new System.Windows.Forms.Label();
             label25 = new System.Windows.Forms.Label();
             label26 = new System.Windows.Forms.Label();
@@ -78,7 +76,6 @@
             panel5 = new System.Windows.Forms.Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)trackBarDelay).BeginInit();
-            panel4.SuspendLayout();
             panel2.SuspendLayout();
             panel5.SuspendLayout();
             SuspendLayout();
@@ -525,32 +522,6 @@
             panel3.Size = new System.Drawing.Size(1076, 36);
             panel3.TabIndex = 33;
             // 
-            // panel4
-            // 
-            panel4.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            panel4.BackColor = System.Drawing.Color.Black;
-            panel4.Controls.Add(label23);
-            panel4.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
-            panel4.Location = new System.Drawing.Point(0, 981);
-            panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            panel4.Name = "panel4";
-            panel4.Size = new System.Drawing.Size(1111, 74);
-            panel4.TabIndex = 34;
-            // 
-            // label23
-            // 
-            label23.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
-            label23.BackColor = System.Drawing.Color.Black;
-            label23.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            label23.ForeColor = System.Drawing.Color.Gold;
-            label23.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            label23.Location = new System.Drawing.Point(-4, 0);
-            label23.Name = "label23";
-            label23.Size = new System.Drawing.Size(238, 74);
-            label23.TabIndex = 35;
-            label23.Text = "Algorithm Visualization";
-            label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label24
             // 
             label24.AutoSize = true;
@@ -634,7 +605,7 @@
             panel5.BackColor = System.Drawing.Color.FromArgb(224, 224, 224);
             panel5.Controls.Add(label22);
             panel5.Controls.Add(trackBarDelay);
-            panel5.Location = new System.Drawing.Point(0, 916);
+            panel5.Location = new System.Drawing.Point(0, 875);
             panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             panel5.Name = "panel5";
             panel5.Size = new System.Drawing.Size(1106, 66);
@@ -652,7 +623,6 @@
             ClientSize = new System.Drawing.Size(1106, 1055);
             Controls.Add(label31);
             Controls.Add(label30);
-            Controls.Add(panel4);
             Controls.Add(label29);
             Controls.Add(label28);
             Controls.Add(label26);
@@ -698,7 +668,6 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)trackBarDelay).EndInit();
-            panel4.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel5.ResumeLayout(false);
@@ -741,8 +710,6 @@
         private System.Windows.Forms.TrackBar trackBarDelay;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;

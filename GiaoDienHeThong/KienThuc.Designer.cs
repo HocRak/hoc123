@@ -40,11 +40,12 @@
             // comboBox1
             // 
             comboBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            comboBox1.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Băm (Hashing)", "Cây đỏ đen (Red Black Tree)", "Đồ thị (Graph)" });
-            comboBox1.Location = new Point(151, 22);
+            comboBox1.Location = new Point(186, 24);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(539, 28);
+            comboBox1.Size = new Size(539, 33);
             comboBox1.TabIndex = 0;
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
@@ -62,11 +63,11 @@
             // 
             // label2
             // 
-            label2.Font = new Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(23, 22);
+            label2.Location = new Point(27, 10);
             label2.Name = "label2";
-            label2.Size = new Size(122, 32);
+            label2.Size = new Size(144, 56);
             label2.TabIndex = 3;
             label2.Text = "Chọn kiến thức";
             label2.TextAlign = ContentAlignment.MiddleCenter;
@@ -77,9 +78,9 @@
             label1.Dock = DockStyle.Right;
             label1.Font = new Font("Yu Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(696, 0);
+            label1.Location = new Point(731, 0);
             label1.Name = "label1";
-            label1.Size = new Size(272, 72);
+            label1.Size = new Size(237, 72);
             label1.TabIndex = 2;
             label1.Text = "Data Structure";
             label1.TextAlign = ContentAlignment.MiddleCenter;

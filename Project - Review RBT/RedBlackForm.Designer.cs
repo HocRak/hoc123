@@ -39,26 +39,24 @@
             textBox_find = new TextBox();
             button_delete = new Button();
             textBox_delete = new TextBox();
-            label2 = new Label();
-            trackBar_speedanimation = new TrackBar();
             panel_main = new Panel();
+            Label_Explanation = new Label();
             panel1 = new Panel();
             label3 = new Label();
-            Label_Explanation = new Label();
             Insert_RBT_Timer = new System.Windows.Forms.Timer(components);
             PathToNode_Timer = new System.Windows.Forms.Timer(components);
             Insert_BST_Timer = new System.Windows.Forms.Timer(components);
             Delay_PathToNode = new System.Windows.Forms.Timer(components);
             Delete_Node_Timer = new System.Windows.Forms.Timer(components);
-            panel2 = new Panel();
-            label4 = new Label();
+            Completed_Animation = new System.Windows.Forms.Timer(components);
+            trackBar_speedanimation = new TrackBar();
+            label2 = new Label();
             panel3 = new Panel();
             panel_header.SuspendLayout();
             panel_function.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)trackBar_speedanimation).BeginInit();
             panel_main.SuspendLayout();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBar_speedanimation).BeginInit();
             panel3.SuspendLayout();
             SuspendLayout();
             // 
@@ -180,45 +178,28 @@
             textBox_delete.Size = new Size(175, 27);
             textBox_delete.TabIndex = 7;
             // 
-            // label2
-            // 
-            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label2.BackColor = Color.Black;
-            label2.Font = new Font("Showcard Gothic", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.FromArgb(224, 224, 224);
-            label2.Location = new Point(33, 8);
-            label2.Name = "label2";
-            label2.Size = new Size(147, 49);
-            label2.TabIndex = 8;
-            label2.Text = "Animation speed";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
-            label2.Click += label2_Click;
-            // 
-            // trackBar_speedanimation
-            // 
-            trackBar_speedanimation.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            trackBar_speedanimation.AutoSize = false;
-            trackBar_speedanimation.BackColor = Color.Silver;
-            trackBar_speedanimation.Location = new Point(186, 8);
-            trackBar_speedanimation.Maximum = 500;
-            trackBar_speedanimation.Minimum = 10;
-            trackBar_speedanimation.Name = "trackBar_speedanimation";
-            trackBar_speedanimation.Size = new Size(216, 49);
-            trackBar_speedanimation.TabIndex = 6;
-            trackBar_speedanimation.TickFrequency = 20;
-            trackBar_speedanimation.Value = 250;
-            // 
             // panel_main
             // 
             panel_main.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel_main.BorderStyle = BorderStyle.Fixed3D;
-            panel_main.Controls.Add(panel1);
             panel_main.Controls.Add(Label_Explanation);
             panel_main.Location = new Point(1, 89);
             panel_main.Name = "panel_main";
-            panel_main.Size = new Size(1232, 463);
+            panel_main.Size = new Size(1232, 801);
             panel_main.TabIndex = 3;
             panel_main.Paint += panel_main_Paint;
+            // 
+            // Label_Explanation
+            // 
+            Label_Explanation.BackColor = SystemColors.Control;
+            Label_Explanation.BorderStyle = BorderStyle.Fixed3D;
+            Label_Explanation.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Label_Explanation.Location = new Point(3, 0);
+            Label_Explanation.Name = "Label_Explanation";
+            Label_Explanation.Size = new Size(265, 80);
+            Label_Explanation.TabIndex = 0;
+            Label_Explanation.Text = "Trạng thái của action";
+            Label_Explanation.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
@@ -242,18 +223,6 @@
             label3.TabIndex = 0;
             label3.Text = "Algorithm visualization\r\n";
             label3.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // Label_Explanation
-            // 
-            Label_Explanation.BackColor = SystemColors.Control;
-            Label_Explanation.BorderStyle = BorderStyle.Fixed3D;
-            Label_Explanation.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Label_Explanation.Location = new Point(3, 0);
-            Label_Explanation.Name = "Label_Explanation";
-            Label_Explanation.Size = new Size(265, 80);
-            Label_Explanation.TabIndex = 0;
-            Label_Explanation.Text = "Trạng thái của action";
-            Label_Explanation.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Insert_RBT_Timer
             // 
@@ -280,29 +249,37 @@
             Delete_Node_Timer.Interval = 50;
             Delete_Node_Timer.Tick += Delete_Node_Timer_Tick;
             // 
-            // panel2
+            // Completed_Animation
             // 
-            panel2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panel2.BackColor = Color.Black;
-            panel2.BorderStyle = BorderStyle.Fixed3D;
-            panel2.Controls.Add(label4);
-            panel2.Location = new Point(1, 887);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1232, 66);
-            panel2.TabIndex = 4;
+            Completed_Animation.Interval = 50;
+            Completed_Animation.Tick += Completed_Animation_Tick;
             // 
-            // label4
+            // trackBar_speedanimation
             // 
-            label4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label4.Font = new Font("Showcard Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.Gold;
-            label4.Location = new Point(-2, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(227, 55);
-            label4.TabIndex = 0;
-            label4.Text = "Algorithm visualization";
-            label4.TextAlign = ContentAlignment.MiddleCenter;
-            label4.Click += label4_Click;
+            trackBar_speedanimation.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            trackBar_speedanimation.AutoSize = false;
+            trackBar_speedanimation.BackColor = Color.Silver;
+            trackBar_speedanimation.Location = new Point(298, 8);
+            trackBar_speedanimation.Maximum = 500;
+            trackBar_speedanimation.Minimum = 10;
+            trackBar_speedanimation.Name = "trackBar_speedanimation";
+            trackBar_speedanimation.Size = new Size(216, 49);
+            trackBar_speedanimation.TabIndex = 6;
+            trackBar_speedanimation.TickFrequency = 20;
+            trackBar_speedanimation.Value = 250;
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label2.BackColor = Color.Black;
+            label2.Font = new Font("Showcard Gothic", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.FromArgb(224, 224, 224);
+            label2.Location = new Point(33, 8);
+            label2.Name = "label2";
+            label2.Size = new Size(259, 49);
+            label2.TabIndex = 8;
+            label2.Text = "Animation speed";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel3
             // 
@@ -310,9 +287,9 @@
             panel3.BackColor = Color.FromArgb(224, 224, 224);
             panel3.Controls.Add(label2);
             panel3.Controls.Add(trackBar_speedanimation);
-            panel3.Location = new Point(1, 822);
+            panel3.Location = new Point(1, 888);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1120, 64);
+            panel3.Size = new Size(1232, 64);
             panel3.TabIndex = 5;
             // 
             // RedBlackForm
@@ -323,7 +300,6 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(1235, 953);
             Controls.Add(panel3);
-            Controls.Add(panel2);
             Controls.Add(panel_main);
             Controls.Add(panel_function);
             Controls.Add(panel_header);
@@ -335,10 +311,9 @@
             panel_header.PerformLayout();
             panel_function.ResumeLayout(false);
             panel_function.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)trackBar_speedanimation).EndInit();
             panel_main.ResumeLayout(false);
             panel1.ResumeLayout(false);
-            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)trackBar_speedanimation).EndInit();
             panel3.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -356,8 +331,6 @@
         private Button button_find;
         private Button button_insert;
         private TextBox textBox_find;
-        private TrackBar trackBar_speedanimation;
-        private Label label2;
         private System.Windows.Forms.Timer Insert_RBT_Timer;
         private System.Windows.Forms.Timer PathToNode_Timer;
         private System.Windows.Forms.Timer Insert_BST_Timer;
@@ -366,8 +339,9 @@
         private System.Windows.Forms.Timer Delay_PathToNode;
         private System.Windows.Forms.Timer Delete_Node_Timer;
         private Panel panel1;
-        private Panel panel2;
-        private Label label4;
+        private System.Windows.Forms.Timer Completed_Animation;
+        private TrackBar trackBar_speedanimation;
+        private Label label2;
         private Panel panel3;
     }
 }

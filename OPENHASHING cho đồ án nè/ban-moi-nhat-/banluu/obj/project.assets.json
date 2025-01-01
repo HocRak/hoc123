@@ -119,23 +119,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lolvl\\.nuget\\packages\\": {},
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lolvl\\source\\repos\\Mô Phỏng Cây Đỏ Đen\\OPENHASHING cho đồ án nè\\banluu\\banluu.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\Documents\\Tài liệu\\Documents\\DoAnTrenGit\\hoc123\\OPENHASHING cho đồ án nè\\ban-moi-nhat-\\banluu\\banluu.csproj",
       "projectName": "banluu",
-      "projectPath": "C:\\Users\\lolvl\\source\\repos\\Mô Phỏng Cây Đỏ Đen\\OPENHASHING cho đồ án nè\\banluu\\banluu.csproj",
-      "packagesPath": "C:\\Users\\lolvl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lolvl\\source\\repos\\Mô Phỏng Cây Đỏ Đen\\OPENHASHING cho đồ án nè\\banluu\\obj\\",
+      "projectPath": "C:\\Users\\ADMIN\\Documents\\Tài liệu\\Documents\\DoAnTrenGit\\hoc123\\OPENHASHING cho đồ án nè\\ban-moi-nhat-\\banluu\\banluu.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ADMIN\\Documents\\Tài liệu\\Documents\\DoAnTrenGit\\hoc123\\OPENHASHING cho đồ án nè\\ban-moi-nhat-\\banluu\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\lolvl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -161,8 +161,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      }
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -196,7 +197,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

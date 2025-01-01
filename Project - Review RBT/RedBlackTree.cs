@@ -378,33 +378,57 @@ namespace Project___Review_RBT
         #endregion
 
         #region Private Delete Methods
-        private RedBlackNode Minimum(RedBlackNode node)
+        /// <summary>
+        /// Tìm node lớn nhất bên trái
+        /// </summary>
+        public RedBlackNode Maximum(RedBlackNode node)
         {
             while (node.Left != null)
             {
                 node = node.Left;
             }
-            return node;
+            return node;  // Trả về nút nhỏ nhất
         }
 
-        private void Transplant(RedBlackNode u, RedBlackNode v)
+        /// <summary>
+        /// Tìm node nhỏ nhất bên phải
+        /// </summary>
+        public RedBlackNode Minimum(RedBlackNode node)
         {
-            if (u.Parent == null)
+            while (node.Left != null)
             {
-                Root = v;
+                node = node.Left;
             }
-            else if (u == u.Parent.Left)
+            return node;  // Trả về nút nhỏ nhất
+        }
+
+        /// <summary>
+        /// Thay nút u bằng nút v
+        /// </summary>
+        public void Transplant(RedBlackNode u, RedBlackNode v)
+        {
+            if (u.Parent == null)  // Nếu u là nút gốc
             {
-                u.Parent.Left = v;
+                Root = v;  // Đặt v làm gốc của cây
             }
-            else
+            else if (u == u.Parent.Left)  // Nếu u là con trái của cha
             {
-                u.Parent.Right = v;
+                u.Parent.Left = v;  // Thay u bằng v
+            }
+            else  // Nếu u là con phải của cha
+            {
+                u.Parent.Right = v;  // Thay u bằng v
             }
 
-            if (v != null) v.Parent = u.Parent;
-        } // Thay nút u bằng nút v
+            if (v != null)  // Nếu v không phải là null
+            {
+                v.Parent = u.Parent;  // Cập nhật parent của v
+            }
+        }
 
+        /// <summary> 
+        /// Cân bằng cây sau khi xóa
+        /// <summry>
         private void FixDelete(RedBlackNode node, RedBlackNode parent)
         {
             while (node != Root && (node == null || !node.IsRed))
@@ -412,7 +436,9 @@ namespace Project___Review_RBT
                 if (node == parent.Left)
                 {
                     RedBlackNode sibling = parent.Right;
-                    if (sibling.IsRed)
+
+                    // Nếu anh/chị em (sibling) của nút bị xóa là đỏ
+                    if (sibling != null && sibling.IsRed)
                     {
                         sibling.IsRed = false;
                         parent.IsRed = true;
@@ -420,16 +446,18 @@ namespace Project___Review_RBT
                         sibling = parent.Right;
                     }
 
-                    if ((sibling.Left == null || !sibling.Left.IsRed) &&
-                        (sibling.Right == null || !sibling.Right.IsRed))
+                    // Nếu anh/chị em của nút bị xóa là đen và cả hai con của nó đều đen
+                    if (sibling == null ||
+                        ((sibling.Left == null || !sibling.Left.IsRed) && (sibling.Right == null || !sibling.Right.IsRed)))
                     {
-                        sibling.IsRed = true;
+                        if (sibling != null) sibling.IsRed = true;
                         node = parent;
                         parent = parent.Parent;
                     }
                     else
                     {
-                        if (sibling.Right == null || !sibling.Right.IsRed)
+                        // Nếu anh/chị em có con bên phải là đen, ta phải làm việc với nó
+                        if (sibling != null && (sibling.Right == null || !sibling.Right.IsRed))
                         {
                             if (sibling.Left != null) sibling.Left.IsRed = false;
                             sibling.IsRed = true;
@@ -437,17 +465,23 @@ namespace Project___Review_RBT
                             sibling = parent.Right;
                         }
 
-                        sibling.IsRed = parent.IsRed;
-                        parent.IsRed = false;
-                        if (sibling.Right != null) sibling.Right.IsRed = false;
-                        RotateLeft(parent);
+                        // Bây giờ anh/chị em phải là đỏ
+                        if (sibling != null)
+                        {
+                            sibling.IsRed = parent.IsRed;
+                            parent.IsRed = false;
+                            if (sibling.Right != null) sibling.Right.IsRed = false;
+                            RotateLeft(parent);
+                        }
                         node = Root;
                     }
                 }
                 else
                 {
                     RedBlackNode sibling = parent.Left;
-                    if (sibling.IsRed)
+
+                    // Nếu anh/chị em của nút bị xóa là đỏ
+                    if (sibling != null && sibling.IsRed)
                     {
                         sibling.IsRed = false;
                         parent.IsRed = true;
@@ -455,16 +489,18 @@ namespace Project___Review_RBT
                         sibling = parent.Left;
                     }
 
-                    if ((sibling.Left == null || !sibling.Left.IsRed) &&
-                        (sibling.Right == null || !sibling.Right.IsRed))
+                    // Nếu anh/chị em của nút bị xóa là đen và cả hai con của nó đều đen
+                    if (sibling == null ||
+                        ((sibling.Left == null || !sibling.Left.IsRed) && (sibling.Right == null || !sibling.Right.IsRed)))
                     {
-                        sibling.IsRed = true;
+                        if (sibling != null) sibling.IsRed = true;
                         node = parent;
                         parent = parent.Parent;
                     }
                     else
                     {
-                        if (sibling.Left == null || !sibling.Left.IsRed)
+                        // Nếu anh/chị em có con bên trái là đen, ta phải làm việc với nó
+                        if (sibling != null && (sibling.Left == null || !sibling.Left.IsRed))
                         {
                             if (sibling.Right != null) sibling.Right.IsRed = false;
                             sibling.IsRed = true;
@@ -472,10 +508,14 @@ namespace Project___Review_RBT
                             sibling = parent.Left;
                         }
 
-                        sibling.IsRed = parent.IsRed;
-                        parent.IsRed = false;
-                        if (sibling.Left != null) sibling.Left.IsRed = false;
-                        RotateRight(parent);
+                        // Bây giờ anh/chị em phải là đỏ
+                        if (sibling != null)
+                        {
+                            sibling.IsRed = parent.IsRed;
+                            parent.IsRed = false;
+                            if (sibling.Left != null) sibling.Left.IsRed = false;
+                            RotateRight(parent);
+                        }
                         node = Root;
                     }
                 }
@@ -484,61 +524,143 @@ namespace Project___Review_RBT
             if (node != null) node.IsRed = false;
         }
 
-        public void Delete(RedBlackNode node, List<string> explanationSteps,System.Windows.Forms.Timer Del)
-         { 
-            RedBlackNode replacement = node; // Nút thay thế ban đầu là chính nút cần xóa
+        /// <summary> 
+        /// Xóa 1 node
+        /// <summry>
+        public void Delete(RedBlackNode node, List<string> explanationSteps, System.Windows.Forms.Timer Del, System.Windows.Forms.Timer time1)
+        {
             RedBlackNode child;
+            RedBlackNode replacement = node; // Nút thay thế
             bool originalColor = replacement.IsRed; // Lưu màu của nút thay thế
 
-            if (node.Left == null) // Trường hợp chỉ có con phải hoặc không có con
+            // Trường hợp nút cần xóa không có con trái hoặc con phải
+            if (node.Left == null)
             {
-                child = node.Right;
-                explanationSteps.Add($"Nút cần xóa không có con trái, thay thế bằng con phải hoặc null.");
-                
-                Transplant(node, node.Right); // Thay thế node bằng con phải
-                CalculateNodePositions(Root, 0, 1938, 100, 150);
-                Del.Start();
+                child = node.Right;  // Thay thế nút cần xóa bằng con phải
+                explanationSteps.Add($"Nút cần xóa không có con trái, thay thế bằng con phải.");
+                Transplant(node, node.Right);  // Thay thế node bằng con phải
             }
-            else if (node.Right == null) // Trường hợp chỉ có con trái
+            else if (node.Right == null)  // Nếu nút cần xóa không có con phải
             {
-                child = node.Left;
+                child = node.Left;  // Thay thế nút cần xóa bằng con trái
                 explanationSteps.Add($"Nút cần xóa không có con phải, thay thế bằng con trái.");
-                Transplant(node, node.Left); // Thay thế node bằng con trái
+                Transplant(node, node.Left);  // Thay thế node bằng con trái
             }
-            else // Trường hợp có cả hai con
+            else  // Trường hợp nút cần xóa có cả hai con
             {
-                explanationSteps.Add($"Nút cần xóa có cả hai con. Tìm nút nhỏ nhất ở cây con phải.");
-                replacement = Minimum(node.Right); // Tìm nút nhỏ nhất ở cây con phải
-                originalColor = replacement.IsRed; // Lưu màu của nút thay thế
-                child = replacement.Right;
+                explanationSteps.Add($"Nút cần xóa có cả hai con. Tìm nút lớn nhất ở cây con trái.");
+                replacement = Maximum(node.Left);  // Tìm nút lớn nhất trong cây con trái
+                originalColor = replacement.IsRed;  // Lưu màu của nút thay thế
+                child = replacement.Left;  // Con trái của nút thay thế
 
-                if (replacement.Parent == node) // Nếu replacement là con của node
+                // Nếu nút thay thế là con trực tiếp của nút cần xóa
+                if (replacement.Parent == node)
                 {
                     explanationSteps.Add($"Nút thay thế là con trực tiếp của nút cần xóa.");
-                    if (child != null) child.Parent = replacement; // Cập nhật cha của child
+                    if (child != null)
+                        child.Parent = replacement;  // Cập nhật parent của child
                 }
                 else
                 {
-                    explanationSteps.Add($"Nút thay thế không phải con trực tiếp của nút cần xóa. Thay thế nút nhỏ nhất ở cây con phải.");
-                    Transplant(replacement, replacement.Right); // Thay thế replacement
-                    replacement.Right = node.Right; // Liên kết lại cây con phải
-                    if (replacement.Right != null) replacement.Right.Parent = replacement;
+                    explanationSteps.Add($"Nút thay thế không phải con trực tiếp của nút cần xóa.");
+                    Transplant(replacement, replacement.Left);  // Thay thế nút lớn nhất với con trái của nó
+                    replacement.Left = node.Left;  // Liên kết lại cây con trái
+                    if (replacement.Left != null)
+                        replacement.Left.Parent = replacement;
                 }
 
-                Transplant(node, replacement); // Thay thế node bằng replacement
-                replacement.Left = node.Left; // Liên kết lại cây con trái
-                if (replacement.Left != null) replacement.Left.Parent = replacement;
-                replacement.IsRed = node.IsRed; // Thừa kế màu của node
-                explanationSteps.Add($"Hoàn tất thay thế nút cần xóa bằng nút nhỏ nhất ở cây con phải.");
+                Transplant(node, replacement);  // Thay thế node bằng replacement
+                replacement.Right = node.Right;  // Liên kết lại cây con phải
+                if (replacement.Right != null)
+                    replacement.Right.Parent = replacement;
+                replacement.IsRed = node.IsRed;  // Thừa kế màu sắc của node
+                explanationSteps.Add($"Hoàn tất thay thế nút cần xóa bằng nút lớn nhất ở cây con trái.");
             }
-
-            if (!originalColor) // Nếu nút bị xóa hoặc thay thế là đen
+            FixEntireTree(Root);
+            // Nếu màu của nút thay thế là đen, ta cần cân bằng lại cây
+            if (!originalColor)
             {
-                explanationSteps.Add($"Nút bị xóa hoặc thay thế là đen. Cần cân bằng lại cây.");
-                FixDelete(child, replacement.Parent); // Gọi hàm cân bằng lại cây
+                explanationSteps.Add($"Nút thay thế là đen. Cần cân bằng lại cây.");
+                FixDelete(child, replacement.Parent);  // Gọi hàm FixDelete để cân bằng lại cây sau khi xóa
+            }
+            CalculateNodePositions(Root, 0, 1778, 100, 150);
+            time1.Start();
+        }
+
+        /// <summary> 
+        /// Sửa màu tại node
+        /// <summry>
+        public void FixDoubleBlackNode(RedBlackNode node)
+        {
+            if (node == null)
+                return;
+
+            // Kiểm tra nếu nút là đen và cả hai con đều đen
+            if (node.IsRed == false && node.Left != null && node.Right != null)
+            {
+                // Nếu cả hai con đều đen
+                if (node.Left.IsRed == false && node.Right.IsRed == false)
+                {
+                    // Thay đổi màu của một trong các con thành đỏ
+                    node.Left.IsRed = true; // Chuyển con trái thành đỏ
+                    node.Right.IsRed = true; // Chuyển con phải thành đỏ
+
+                    // Nếu nút này là gốc của cây, thì không cần thay đổi thêm
+                    if (node.Parent == null)
+                    {
+                        node.IsRed = false; // Gốc là đen
+                    }
+                    else
+                    {
+                        // Nếu nút này không phải là gốc, làm cho nó trở thành đỏ
+                        node.IsRed = true;
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Sửa màu , không có trường hợp node đen có 2 node đen con
+        /// </summary>
+        public void FixEntireTree(RedBlackNode node)
+        {
+            if (node == null)
+                return;
+
+            // Duyệt qua toàn bộ cây
+            if (node.Left != null)
+            {
+                FixDoubleBlackNode(node.Left); // Kiểm tra và sửa cây con trái
+                FixEntireTree(node.Left);  // Duyệt tiếp vào cây con trái
             }
 
-            explanationSteps.Add($"Hoàn tất quá trình xóa nút {node.Value}.");
+            if (node.Right != null)
+            {
+                FixDoubleBlackNode(node.Right); // Kiểm tra và sửa cây con phải
+                FixEntireTree(node.Right);  // Duyệt tiếp vào cây con phải
+            }
+
+            // Nếu nút hiện tại là nút đen và có cả hai con đen
+            if (node.IsRed == false && node.Left != null && node.Right != null)
+            {
+                if (node.Left.IsRed == false && node.Right.IsRed == false)
+                {
+                    // Thay đổi màu của một trong các con thành đỏ
+                    node.Left.IsRed = true; // Chuyển con trái thành đỏ
+                    node.Right.IsRed = true; // Chuyển con phải thành đỏ
+
+                    // Nếu nút này là gốc của cây, thì không cần thay đổi thêm
+                    if (node.Parent == null)
+                    {
+                        node.IsRed = false; // Gốc là đen
+                    }
+                    else
+                    {
+                        // Nếu nút này không phải là gốc, làm cho nó trở thành đỏ
+                        node.IsRed = true;
+                    }
+                }
+            }
         }
 
         #endregion

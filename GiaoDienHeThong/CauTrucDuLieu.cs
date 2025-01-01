@@ -91,5 +91,10 @@ namespace GiaoDienHeThong
             Project.dothi dothi = new Project.dothi();
             HienThi(dothi);
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            panel_main.Controls.Clear();
+        }
     }
 }

@@ -52,8 +52,6 @@
             kruskalMSTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             toolStripButton1 = new System.Windows.Forms.ToolStripSeparator();
             tSBRefresh = new System.Windows.Forms.ToolStripButton();
-            panel2 = new System.Windows.Forms.Panel();
-            label1 = new System.Windows.Forms.Label();
             groupBox1 = new System.Windows.Forms.GroupBox();
             lbThuTuDuyet = new System.Windows.Forms.Label();
             grBLoai = new System.Windows.Forms.GroupBox();
@@ -78,7 +76,6 @@
             panel1.SuspendLayout();
             grbDSCanh.SuspendLayout();
             toolStrip1.SuspendLayout();
-            panel2.SuspendLayout();
             groupBox1.SuspendLayout();
             grBLoai.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
@@ -113,16 +110,15 @@
             // 
             // grBDoThi
             // 
-            grBDoThi.Dock = System.Windows.Forms.DockStyle.Right;
             grBDoThi.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             grBDoThi.Location = new System.Drawing.Point(939, 120);
             grBDoThi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             grBDoThi.Name = "grBDoThi";
             grBDoThi.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            grBDoThi.Size = new System.Drawing.Size(908, 870);
+            grBDoThi.Size = new System.Drawing.Size(908, 899);
             grBDoThi.TabIndex = 5;
             grBDoThi.TabStop = false;
-            grBDoThi.Text = "Đồ thị mô phỏng";
+            grBDoThi.Text = "Visualization";
             grBDoThi.Paint += grBDoThi_Paint;
             // 
             // grbDSCanh
@@ -136,7 +132,7 @@
             grbDSCanh.Size = new System.Drawing.Size(196, 528);
             grbDSCanh.TabIndex = 6;
             grbDSCanh.TabStop = false;
-            grbDSCanh.Text = "Danh sách cạnh ";
+            grbDSCanh.Text = "Edges List";
             // 
             // lsvDSCanh
             // 
@@ -166,8 +162,8 @@
             toolStripLabel1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             toolStripLabel1.ForeColor = System.Drawing.Color.Black;
             toolStripLabel1.Name = "toolStripLabel1";
-            toolStripLabel1.Size = new System.Drawing.Size(125, 42);
-            toolStripLabel1.Text = "Đỉnh bắt đầu: ";
+            toolStripLabel1.Size = new System.Drawing.Size(111, 42);
+            toolStripLabel1.Text = "Start Vertex:";
             // 
             // tSTBDinh
             // 
@@ -183,8 +179,8 @@
             // 
             toolStripLabel2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             toolStripLabel2.Name = "toolStripLabel2";
-            toolStripLabel2.Size = new System.Drawing.Size(60, 42);
-            toolStripLabel2.Text = "Cạnh: ";
+            toolStripLabel2.Size = new System.Drawing.Size(55, 42);
+            toolStripLabel2.Text = "Edge:";
             // 
             // tSTBCanh
             // 
@@ -195,26 +191,26 @@
             // 
             tSBThem.BackColor = System.Drawing.Color.Black;
             tSBThem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            tSBThem.Font = new System.Drawing.Font("Showcard Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            tSBThem.Font = new System.Drawing.Font("Showcard Gothic", 16.2F);
             tSBThem.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
             tSBThem.Image = (System.Drawing.Image)resources.GetObject("tSBThem.Image");
             tSBThem.ImageTransparentColor = System.Drawing.Color.Magenta;
             tSBThem.Name = "tSBThem";
-            tSBThem.Size = new System.Drawing.Size(101, 42);
-            tSBThem.Text = "Thêm";
+            tSBThem.Size = new System.Drawing.Size(78, 42);
+            tSBThem.Text = "ADD";
             tSBThem.Click += tSBThem_Click;
             // 
             // tSBXoa
             // 
             tSBXoa.BackColor = System.Drawing.Color.FromArgb(224, 224, 224);
             tSBXoa.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            tSBXoa.Font = new System.Drawing.Font("Showcard Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            tSBXoa.Font = new System.Drawing.Font("Showcard Gothic", 16.2F);
             tSBXoa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             tSBXoa.Image = (System.Drawing.Image)resources.GetObject("tSBXoa.Image");
             tSBXoa.ImageTransparentColor = System.Drawing.Color.Magenta;
             tSBXoa.Name = "tSBXoa";
-            tSBXoa.Size = new System.Drawing.Size(80, 42);
-            tSBXoa.Text = "Xóa";
+            tSBXoa.Size = new System.Drawing.Size(120, 42);
+            tSBXoa.Text = "DELETE";
             tSBXoa.Click += tSBXoa_Click;
             // 
             // toolStripSeparator2
@@ -227,40 +223,40 @@
             toolStripSplitButton1.BackColor = System.Drawing.Color.Lime;
             toolStripSplitButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             toolStripSplitButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { BFSToolStripMenuItem, DFSToolStripMenuItem, dijkstraToolStripMenuItem, kruskalMSTToolStripMenuItem });
-            toolStripSplitButton1.Font = new System.Drawing.Font("Showcard Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            toolStripSplitButton1.Font = new System.Drawing.Font("Showcard Gothic", 16.2F);
             toolStripSplitButton1.ForeColor = System.Drawing.Color.Black;
             toolStripSplitButton1.Image = (System.Drawing.Image)resources.GetObject("toolStripSplitButton1.Image");
             toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             toolStripSplitButton1.Name = "toolStripSplitButton1";
-            toolStripSplitButton1.Size = new System.Drawing.Size(215, 42);
-            toolStripSplitButton1.Text = "&Thuật toán";
+            toolStripSplitButton1.Size = new System.Drawing.Size(197, 42);
+            toolStripSplitButton1.Text = "Algorithm";
             // 
             // BFSToolStripMenuItem
             // 
             BFSToolStripMenuItem.Name = "BFSToolStripMenuItem";
-            BFSToolStripMenuItem.Size = new System.Drawing.Size(293, 40);
+            BFSToolStripMenuItem.Size = new System.Drawing.Size(297, 40);
             BFSToolStripMenuItem.Text = "&BFS";
             BFSToolStripMenuItem.Click += BFSToolStripMenuItem_Click;
             // 
             // DFSToolStripMenuItem
             // 
             DFSToolStripMenuItem.Name = "DFSToolStripMenuItem";
-            DFSToolStripMenuItem.Size = new System.Drawing.Size(293, 40);
+            DFSToolStripMenuItem.Size = new System.Drawing.Size(297, 40);
             DFSToolStripMenuItem.Text = "&DFS";
             DFSToolStripMenuItem.Click += DFSToolStripMenuItem_Click;
             // 
             // dijkstraToolStripMenuItem
             // 
             dijkstraToolStripMenuItem.Name = "dijkstraToolStripMenuItem";
-            dijkstraToolStripMenuItem.Size = new System.Drawing.Size(293, 40);
+            dijkstraToolStripMenuItem.Size = new System.Drawing.Size(297, 40);
             dijkstraToolStripMenuItem.Text = "&Dijkstra";
             dijkstraToolStripMenuItem.Click += dijkstraToolStripMenuItem_Click;
             // 
             // kruskalMSTToolStripMenuItem
             // 
             kruskalMSTToolStripMenuItem.Name = "kruskalMSTToolStripMenuItem";
-            kruskalMSTToolStripMenuItem.Size = new System.Drawing.Size(293, 40);
-            kruskalMSTToolStripMenuItem.Text = "&KruskalMST";
+            kruskalMSTToolStripMenuItem.Size = new System.Drawing.Size(297, 40);
+            kruskalMSTToolStripMenuItem.Text = "&Kruskal_MST";
             kruskalMSTToolStripMenuItem.Click += kruskalMSTToolStripMenuItem_Click;
             // 
             // toolStripButton1
@@ -273,35 +269,13 @@
             tSBRefresh.BackColor = System.Drawing.Color.Silver;
             tSBRefresh.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             tSBRefresh.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, 0);
-            tSBRefresh.ForeColor = System.Drawing.Color.Navy;
+            tSBRefresh.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             tSBRefresh.Image = (System.Drawing.Image)resources.GetObject("tSBRefresh.Image");
             tSBRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
             tSBRefresh.Name = "tSBRefresh";
             tSBRefresh.Size = new System.Drawing.Size(120, 42);
             tSBRefresh.Text = "Refresh";
             tSBRefresh.Click += tSBRefresh_Click;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = System.Drawing.Color.Black;
-            panel2.Controls.Add(label1);
-            panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            panel2.Location = new System.Drawing.Point(0, 990);
-            panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            panel2.Name = "panel2";
-            panel2.Size = new System.Drawing.Size(1847, 54);
-            panel2.TabIndex = 13;
-            // 
-            // label1
-            // 
-            label1.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            label1.ForeColor = System.Drawing.Color.Gold;
-            label1.Location = new System.Drawing.Point(21, 4);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(230, 54);
-            label1.TabIndex = 0;
-            label1.Text = "Algorithm Visualization";
             // 
             // groupBox1
             // 
@@ -314,7 +288,7 @@
             groupBox1.Size = new System.Drawing.Size(334, 200);
             groupBox1.TabIndex = 15;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Thứ tự duyệt";
+            groupBox1.Text = "Traversal Order";
             groupBox1.Visible = false;
             // 
             // lbThuTuDuyet
@@ -337,44 +311,44 @@
             grBLoai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             grBLoai.Name = "grBLoai";
             grBLoai.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            grBLoai.Size = new System.Drawing.Size(413, 149);
+            grBLoai.Size = new System.Drawing.Size(613, 149);
             grBLoai.TabIndex = 16;
             grBLoai.TabStop = false;
-            grBLoai.Text = "Loại đồ thị";
+            grBLoai.Text = "Type of Graph";
             // 
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new System.Drawing.Point(29, 105);
+            checkBox1.Location = new System.Drawing.Point(12, 96);
             checkBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             checkBox1.Name = "checkBox1";
-            checkBox1.Size = new System.Drawing.Size(177, 27);
+            checkBox1.Size = new System.Drawing.Size(165, 27);
             checkBox1.TabIndex = 2;
-            checkBox1.Text = "Đồ thị có trọng số";
+            checkBox1.Text = "Weighted Graph";
             checkBox1.UseVisualStyleBackColor = true;
             checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // rBCoHuong
             // 
             rBCoHuong.AutoSize = true;
-            rBCoHuong.Location = new System.Drawing.Point(29, 72);
+            rBCoHuong.Location = new System.Drawing.Point(12, 63);
             rBCoHuong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             rBCoHuong.Name = "rBCoHuong";
-            rBCoHuong.Size = new System.Drawing.Size(162, 27);
+            rBCoHuong.Size = new System.Drawing.Size(154, 27);
             rBCoHuong.TabIndex = 1;
-            rBCoHuong.Text = "Đồ thị có hướng";
+            rBCoHuong.Text = "Directed Graph";
             rBCoHuong.UseVisualStyleBackColor = true;
             rBCoHuong.CheckedChanged += rBCoHuong_CheckedChanged;
             // 
             // rBVoHuong
             // 
             rBVoHuong.AutoSize = true;
-            rBVoHuong.Location = new System.Drawing.Point(29, 40);
+            rBVoHuong.Location = new System.Drawing.Point(12, 31);
             rBVoHuong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             rBVoHuong.Name = "rBVoHuong";
-            rBVoHuong.Size = new System.Drawing.Size(163, 27);
+            rBVoHuong.Size = new System.Drawing.Size(174, 27);
             rBVoHuong.TabIndex = 0;
-            rBVoHuong.Text = "Đồ thị vô hướng";
+            rBVoHuong.Text = "Undirected Graph";
             rBVoHuong.UseVisualStyleBackColor = true;
             rBVoHuong.CheckedChanged += rBVoHuong_CheckedChanged;
             // 
@@ -398,11 +372,10 @@
             panel3.Controls.Add(btnPause);
             panel3.Controls.Add(btnSkipBack);
             panel3.Controls.Add(trackBar1);
-            panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            panel3.Location = new System.Drawing.Point(0, 927);
+            panel3.Location = new System.Drawing.Point(0, 914);
             panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
-            panel3.Size = new System.Drawing.Size(939, 63);
+            panel3.Size = new System.Drawing.Size(939, 80);
             panel3.TabIndex = 18;
             // 
             // lbSpeed
@@ -537,14 +510,13 @@
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
-            ClientSize = new System.Drawing.Size(1847, 1044);
+            ClientSize = new System.Drawing.Size(1847, 1032);
             Controls.Add(panel3);
             Controls.Add(grBDoThi);
             Controls.Add(dataGridView1);
             Controls.Add(groupBox1);
             Controls.Add(pnl_Kruskal);
             Controls.Add(grBLoai);
-            Controls.Add(panel2);
             Controls.Add(toolStrip1);
             Controls.Add(grbDSCanh);
             Controls.Add(panel1);
@@ -559,7 +531,6 @@
             grbDSCanh.ResumeLayout(false);
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
-            panel2.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             grBLoai.ResumeLayout(false);
@@ -594,8 +565,6 @@
         private System.Windows.Forms.ToolStripMenuItem BFSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem DFSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dijkstraToolStripMenuItem;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lbThuTuDuyet;
         private System.Windows.Forms.GroupBox grBLoai;

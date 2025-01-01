@@ -50,7 +50,7 @@
             // 
             // label2
             // 
-            label2.Font = new Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
             label2.Location = new Point(23, 22);
             label2.Name = "label2";
@@ -75,11 +75,12 @@
             // comboBox1
             // 
             comboBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            comboBox1.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Băm (Hashing)", "Cây đỏ đen (Red Black Tree)", "Đồ thị (Graph)" });
             comboBox1.Location = new Point(151, 22);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(545, 28);
+            comboBox1.Size = new Size(545, 33);
             comboBox1.TabIndex = 0;
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 

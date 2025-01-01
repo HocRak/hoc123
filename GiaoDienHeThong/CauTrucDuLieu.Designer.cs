@@ -39,7 +39,10 @@
             button_user = new Button();
             panel_main = new Panel();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            panel2 = new Panel();
+            label4 = new Label();
             panel_Tool.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -191,11 +194,33 @@
             panel_main.BackColor = Color.FromArgb(247, 248, 250);
             panel_main.BackgroundImageLayout = ImageLayout.Stretch;
             panel_main.BorderStyle = BorderStyle.Fixed3D;
-            panel_main.Dock = DockStyle.Right;
             panel_main.Location = new Point(159, 0);
             panel_main.Name = "panel_main";
-            panel_main.Size = new Size(1023, 693);
+            panel_main.Size = new Size(1023, 626);
             panel_main.TabIndex = 9;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.Black;
+            panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(label4);
+            panel2.Dock = DockStyle.Bottom;
+            panel2.Location = new Point(160, 627);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1022, 66);
+            panel2.TabIndex = 14;
+            // 
+            // label4
+            // 
+            label4.Font = new Font("Showcard Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.Gold;
+            label4.Location = new Point(-3, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(1019, 62);
+            label4.TabIndex = 0;
+            label4.Text = "Algorithm visualization";
+            label4.TextAlign = ContentAlignment.MiddleCenter;
+            label4.Click += label4_Click;
             // 
             // CauTrucDuLieu
             // 
@@ -203,9 +228,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(15, 16, 18);
             ClientSize = new Size(1182, 693);
+            Controls.Add(panel2);
             Controls.Add(panel_Tool);
             Controls.Add(panel_main);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
             Name = "CauTrucDuLieu";
@@ -213,6 +239,7 @@
             WindowState = FormWindowState.Maximized;
             Load += CauTrucDuLieu_Load;
             panel_Tool.ResumeLayout(false);
+            panel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -227,5 +254,7 @@
         private Button button_user;
         private Panel panel_main;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Panel panel2;
+        private Label label4;
     }
 }
