@@ -184,3 +184,96 @@ C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debu
 C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDien.BCB25CC2.Up2Date
 C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.genruntimeconfig.cache
 C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\ref\GiaoDienHeThong.dll
+C:\Users\LENOVO\Source\Repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.dll
+C:\Users\LENOVO\Source\Repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\refint\GiaoDienHeThong.dll
+C:\Users\LENOVO\Source\Repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.pdb
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Project.deps.json
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Project.runtimeconfig.json
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Project.exe
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\banluu.deps.json
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\banluu.runtimeconfig.json
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\banluu.exe
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Project - Review RBT.deps.json
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Project - Review RBT.runtimeconfig.json
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Project - Review RBT.exe
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\GiaoDienHeThong.exe
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\GiaoDienHeThong.deps.json
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\GiaoDienHeThong.runtimeconfig.json
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\GiaoDienHeThong.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\GiaoDienHeThong.pdb
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\QuickGraph.Data.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\QuickGraph.Graphviz.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\QuickGraph.Serialization.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\QuickGraph.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\System.Drawing.Common.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\System.Private.Windows.Core.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\banluu.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Project - Review RBT.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Project.dll
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Project.pdb
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Project.dll.config
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\banluu.pdb
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\banluu.dll.config
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Project - Review RBT.pdb
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.xml
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.xml
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.xml
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.csproj.AssemblyReference.cache
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.BaiTap.resources
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.CauTrucDuLieu.resources
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.DangKy.resources
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.DangNhap.resources
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.KienThuc.resources
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.QuenMatKhau.resources
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.User.resources
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.csproj.GenerateResource.cache
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.AssemblyInfoInputs.cache
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.AssemblyInfo.cs
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.sourcelink.json
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDien.BCB25CC2.Up2Date
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.genruntimeconfig.cache
+C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\obj\Debug\net8.0-windows\ref\GiaoDienHeThong.dll

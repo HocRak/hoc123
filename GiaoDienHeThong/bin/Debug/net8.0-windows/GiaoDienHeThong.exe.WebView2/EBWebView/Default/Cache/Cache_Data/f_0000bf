@@ -1,0 +1,1841 @@
+
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Chapter 0 Preface &mdash; OpenDSA Data Structures and Algorithms Modules Collection</title>
+    
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../lib/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="../../../lib/JSAV.css" type="text/css" />
+    <link rel="stylesheet" href="../../../lib/odsaMOD-min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../lib/jquery.ui.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../lib/odsaStyle-min.css" type="text/css" />
+    
+  <script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+      URL_ROOT:    './',
+      VERSION:     '0.4.1',
+      COLLAPSE_INDEX: false,
+      FILE_SUFFIX: '.html',
+      HAS_SOURCE:  true
+    };
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+      },
+      "HTML-CSS": {
+        scale: "80"
+      }
+    });
+  </script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="index" title="OpenDSA Data Structures and Algorithms Modules Collection" href="#" />
+    <link rel="next" title="1. How to Use this System" href="Intro.html" />
+
+  <style>
+ul li {
+	background: none;
+	list-style-type: none;
+}
+</style>
+</head>
+
+  <body>
+
+
+      <div class="header">
+        
+  
+      <script type="text/javascript" src="../../../lib/jquery.min.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.migrate.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.9.0/localforage.min.js"></script>
+    <script type="text/javascript" src="../../../lib/jquery.scrolldepth.js"></script>
+    <script type="text/javascript" src="../../../lib/timeme.js"></script>
+    <script type="text/javascript" src="../../../lib/jquery.ui.min.js"></script>
+    <script type="text/javascript" src="../../../lib/jquery.transit.js"></script>
+    <script type="text/javascript" src="../../../lib/raphael.js"></script>
+    <script type="text/javascript" src="../../../lib/JSAV-min.js"></script>
+    <script type="text/javascript" src="_static/config.js"></script>
+    <script type="text/javascript" src="../../../lib/timeme-min.js"></script>
+    <script type="text/javascript" src="../../../lib/odsaUtils-min.js"></script>
+    <script type="text/javascript" src="../../../lib/odsaMOD-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <script type="text/javascript" src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+    <script type="text/javascript" src="../../../lib/dataStructures.js"></script>
+    <script type="text/javascript" src="../../../lib/conceptMap.js"></script>
+
+        
+<a id="username-link" style="float:right;color:red;margin:10px 20px auto; display: none" class="username-link" href="Gradebook.html"></a>
+<a id="login-link" style="float:right;color:red;margin:10px 20px auto" class="login-link" href="#"><Macro 'login'></a>
+<div id="login-box" class="login-popup">
+  <a href="#" class="close"><img src="_static/Images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+  <form method="post" class="signin" action="https://#">
+    <fieldset class="textbox">
+      <label class="username">
+        <span>Username</span>
+        <input id="username" value="" type="text" autocomplete="on" placeholder="Username" tabindex="1">
+      </label>
+      <label class="password">
+        <span>Password</span>
+        <input id="password" value="" type="password" placeholder="Password" tabindex="2">
+        <span><a id="forgot" href="#">Forgot your password?</a></span>
+      </label>
+
+      <p>
+        <input type="submit" id="login-submit-button" value="Sign in" tabindex="3" />
+      </p>
+      <p>
+        <input type="button" id="register-button" value="Register" tabindex="4" />
+      </p>
+    </fieldset>
+  </form>
+</div>
+
+        
+<a id="registration-link" style="float:right;color:red;margin:10px 20px auto" class="registration-link" href="#">Register</a>
+<div id="registration-box" class="registration-popup ">
+  <a href="#" class="close"><img src="_static/Images/close_pop.png" class="btn_close" title="Close Window" alt="Close Window" /></a>
+  <form method="post" class="signin" action="https://#">
+    <fieldset class="textbox">
+      <div id="register_error" class="error"></div>
+      <label class="username">
+        <span>Username:</span>
+        <input type="text" id="user" placeholder="Username" />
+      </label>
+
+      <label class="password">
+        <span>Password</span>
+        <input id="pass" type="password" placeholder="Password" />
+      </label>
+
+      <label class="password">
+        <span>Confirm Password</span>
+        <input id="rpass" type="password" placeholder="Confirm Password" />
+      </label>
+
+      <label class="email">
+        <span>Email:</span>
+        <input type="text" id="email" placeholder="Email">
+      </label>
+
+      <p>
+        <input type="submit" id="register-submit-button" value="Register &rarr;"/>
+      </p>
+    </fieldset>
+  </form>
+</div>
+<img class="leftlogo" src="_static/OpenDSALogoT64.png" alt=""/><div class="title-wrapper">
+          <div class="title-inbetween" style="display: table-cell; vertical-align: middle;">
+            <div class="title-content">
+              <h1 class="heading" ><a href="#">
+                <span>OpenDSA Data Structures and Algorithms Modules Collection</span></a></h1><h2 class="heading" ><span> Table Of Contents </span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="topnav">
+        <p>
+            <a style="float:left;color:blue;" href="../source/index.rst.rst"
+              target="_blank" rel="nofollow">Show Source | </a>&#160;&#160;
+            <a class="abt" style="float:left;color:blue;" href="#" rel="nofollow">| About</a>&#160;&#160;
+
+          
+        <a  class="uplink" href="#">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a  id="nextmod" href="Intro.html">0.<span class="section-number">1. </span>How to Use this System</a>&#160;&#160;»
+
+
+        </p>
+      </div>
+       
+      <div class="content"><div class="sidebar" style="border-style:none;background-color:transparent">
+          <h3 style="margin-top:0em;">Search the book</h3>
+          <form class="search" action="search.html" method="get">
+            <input type="text" />
+            <input type="submit" value="Go" />
+            <input type="hidden" value="yes" />
+            <input type="hidden" value="default" />
+          </form>
+          <p class="searchtip" style="font-size: 60%">
+            Enter search terms or a module, class or function name.
+          </p>
+        </div>
+        
+  <script>ODSA.SETTINGS.DISP_MOD_COMP = false;ODSA.SETTINGS.MODULE_NAME = "index";ODSA.SETTINGS.MODULE_LONG_NAME = "Contents";ODSA.SETTINGS.MODULE_CHAPTER = ""; ODSA.SETTINGS.BUILD_DATE = "2024-10-16 12:32:27"; ODSA.SETTINGS.BUILD_CMAP = false;</script><section id="preface">
+<h1><span class="sectnum">Chapter 0 </span>Preface<a class="headerlink" href="#preface" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Intro.html">-1.1. How to Use this System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Status.html">-1.2. OpenDSA Project Content Status</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Status.html#status-report">-1.2.1. Status Report</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Status.html#configuring-your-own-book">-1.2.1.1. Configuring Your Own Book</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="introduction-for-data-structures-and-algorithms-courses">
+<h1><span class="sectnum">Chapter 1 </span>Introduction for Data Structures and Algorithms Courses<a class="headerlink" href="#introduction-for-data-structures-and-algorithms-courses" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="IntroDSA.html">-1.1. Data Structures and Algorithms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="IntroDSA.html#id1">-1.1.1. Data Structures and Algorithms</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="IntroDSA.html#introduction">-1.1.1.1. Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IntroDSA.html#a-philosophy-of-data-structures">-1.1.1.2. A Philosophy of Data Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IntroDSA.html#selecting-a-data-structure">-1.1.1.3. Selecting a Data Structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IntroDSA.html#introduction-summary-questions">-1.1.1.4. Introduction Summary Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="IntroDSA.html#some-software-engineering-topics">-1.1.2. Some Software Engineering Topics</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="biographies">
+<h1><span class="sectnum">Chapter 2 </span>Biographies<a class="headerlink" href="#biographies" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="CarlGauss.html">-1.1. Spotlight: Carl Friedrich Gauss</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CarlGauss.html#id1">-1.1.1. Spotlight: Carl Friedrich Gauss</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="FrancisBacon.html">-1.2. Spotlight: Francis Bacon</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="FrancisBacon.html#id1">-1.2.1. Spotlight: Francis Bacon</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="programming-tutorials">
+<h1><span class="sectnum">Chapter 3 </span>Programming Tutorials<a class="headerlink" href="#programming-tutorials" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cmdline.html">-1.1. Command Line Basics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmdline.html#what-s-a-cli">-1.1.1. What’s A CLI?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="parameters.html">-1.2. Parsing Command Line Parameters In Your Program</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="parameters.html#parameters-in-programming">-1.2.1. Parameters In Programming</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="eclipseparameters.html">-1.3. Using Command Line Parameters in Eclipse</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="eclipseparameters.html#id1">-1.3.1. Using Command Line Parameters in Eclipse</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="webcattools.html">-1.4. Installing the Web-CAT Submission Plug-in for Eclipse</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="webcattools.html#introduction">-1.4.1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="webcattools.html#installing-the-plug-in">-1.4.2. Installing the Plug-in</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="webcattools.html#un-installing-an-old-plug-in">-1.4.2.1. Un-Installing an Old Plug-in</a></li>
+<li class="toctree-l3"><a class="reference internal" href="webcattools.html#id1">-1.4.2.2. Installing the Plug-in</a></li>
+<li class="toctree-l3"><a class="reference internal" href="webcattools.html#final-setup">-1.4.2.3. Final Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="webcattools.html#installing-student-jar">-1.4.3. Installing student.jar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="webcattools.html#installing-formatting-support">-1.4.4. Installing formatting support</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="debugmethods.html">-1.5. Common Debugging Methods</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="debugmethods.html#id1">-1.5.1. Common Debugging Methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="debugmethods.html#print-debugging">-1.5.1.1. Print Debugging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debugmethods.html#rubber-duck-debugging">-1.5.1.2. Rubber Duck Debugging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debugmethods.html#wolf-fence-debugging">-1.5.1.3. Wolf Fence Debugging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debugmethods.html#print-debugging-vs-source-debugging">-1.5.1.4. Print Debugging vs Source Debugging</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="debug.html">-1.6. Debugging In Eclipse</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="debug.html#id1">-1.6.1. Debugging In Eclipse</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="debug.html#what-is-a-debugger">-1.6.1.1. What Is A Debugger?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debug.html#debugging-terms">-1.6.1.2. Debugging Terms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debug.html#debugging-a-memory-pool">-1.6.1.3. Debugging A Memory Pool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debug.html#the-eclipse-console">-1.6.1.4. The Eclipse Console</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debug.html#conditional-breakpoints">-1.6.1.5. Conditional Breakpoints</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="scanning.html">-1.7. Reading Input (from Files or Otherwise)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scanning.html#the-scanner-class">-1.7.1. The Scanner Class</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="randomaccessfile.html">-1.8. Random Access Files In Java</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="randomaccessfile.html#understanding-file-i-o">-1.8.1. Understanding File I/O</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="randomaccessfile.html#using-randomaccessfile-class">-1.8.1.1. Using RandomAccessFile Class</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="junitstart.html">-1.9. JUnit Testing And You</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="junitstart.html#getting-started">-1.9.1. Getting Started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="junitstart.html#design-considerations">-1.9.1.1. Design Considerations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="junitstart.html#meaningful-tests">-1.9.1.2. Meaningful Tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="junitstart.html#more-information">-1.9.1.3. More Information</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="junitbasic.html">-1.10. Writing JUnit Tests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="junitbasic.html#id1">-1.10.1. Writing JUnit Tests</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="junitcoverage.html">-1.11. Code Coverage In JUnit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="junitcoverage.html#id1">-1.11.1. Code Coverage In JUnit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="junitcoverage.html#using-eclemma">-1.11.1.1. Using EclEmma</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mutationtesting.html">-1.12. Mutation Coverage In JUnit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mutationtesting.html#id1">-1.12.1. Mutation Coverage In JUnit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting.html#using-mutation-testing">-1.12.1.1. Using Mutation Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting.html#lines-not-tested">-1.12.1.2. Lines Not Tested</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting.html#lines-needing-better-testing">-1.12.1.3. Lines Needing Better Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting.html#mutation-summary">-1.12.1.4. Mutation Summary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mutationtesting_example.html">-1.13. Mutation Testing Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mutationtesting_example.html#types-of-mutants">-1.13.1. Types of Mutants</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting_example.html#arithmetic-operation-mutant">-1.13.1.1. Arithmetic Operation Mutant</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting_example.html#example-code-1-arithmetic-operation-mutant">-1.13.1.2. Example Code 1: Arithmetic Operation Mutant</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting_example.html#logical-expression-mutant-remove-conditionals">-1.13.1.3. Logical Expression Mutant (Remove Conditionals)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting_example.html#example-code-2-logical-expression-mutant-remove-conditionals">-1.13.1.4. Example Code 2: Logical Expression Mutant (Remove Conditionals)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting_example.html#example-code-3-multiple-mutants-in-one-evenoddcheck">-1.13.1.5. Example Code 3: Multiple Mutants in One (EvenOddCheck)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting_example.html#example-code-4-loop-conditions-optional">-1.13.1.6. Example Code 4: Loop Conditions (optional)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mutationtesting_faq.html">-1.14. Mutation Coverage: FAQ</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mutationtesting_faq.html#frequently-asked-questions">-1.14.1. Frequently Asked Questions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting_faq.html#what-is-mutation-testing-and-why-should-i-use-it">-1.14.1.1. What is Mutation Testing and why should I use it?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting_faq.html#does-100-mutation-score-mean-100-project-correctness">-1.14.1.2. Does 100% Mutation Score mean 100% Project Correctness?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting_faq.html#why-does-writing-mutation-tests-take-so-much-time">-1.14.1.3. Why does writing Mutation Tests take so much time?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting_faq.html#why-should-i-use-mutation-testing-instead-of-code-coverage">-1.14.1.4. Why should I use Mutation Testing instead of Code Coverage?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting_faq.html#why-are-we-using-this-particular-set-of-mutation-operators">-1.14.1.5. Why are we using this particular set of mutation operators?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting_faq.html#does-100-mutation-score-mean-my-code-is-perfect">-1.14.1.6. Does 100% Mutation Score mean my code is perfect?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting_faq.html#why-do-i-have-bugs-in-my-code-despite-having-100-mutation-score">-1.14.1.7. Why do I have bugs in my code despite having 100% Mutation Score?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting_faq.html#why-do-my-mutation-tests-not-cover-all-branches-of-my-code">-1.14.1.8. Why do my mutation tests not cover all branches of my code?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting_faq.html#how-do-i-localize-the-bugs-in-my-code">-1.14.1.9. How do I localize the bugs in my code?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mutationtesting_faq.html#how-do-i-recover-the-mutation-list-mutation-summary-tabs">-1.14.1.10. How do I recover the “Mutation List”/”Mutation Summary” tabs?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="TestIntro.html">-1.15. Testing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="TestIntro.html#testing-vs-debugging">-1.15.1. Testing vs. Debugging</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="TestCoverage.html">-1.16. Testing for Code Coverage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="TestCoverage.html#id1">-1.16.1. Testing for Code Coverage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Example2.html">-1.17. Another Example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Example2.html#id1">-1.17.1. Another Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Bowling.html">-1.18. Bowling Example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Bowling.html#id1">-1.18.1. Bowling Example</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="design-i">
+<h1><span class="sectnum">Chapter 4 </span>Design I<a class="headerlink" href="#design-i" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ADT.html">-1.1. Abstract Data Types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ADT.html#id1">-1.1.1. Abstract Data Types</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="IntroOO.html">-1.2. Introduction to Object-Oriented Programming</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="IntroOO.html#id1">-1.2.1. Introduction to Object-Oriented Programming</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="IntroOO.html#principles-of-object-oriented-programming">-1.2.1.1. Principles of Object Oriented Programming</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IntroOO.html#encapsulation">-1.2.1.2. Encapsulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IntroOO.html#inheritance">-1.2.1.3. Inheritance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IntroOO.html#polymorphism">-1.2.1.4. Polymorphism</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IntroOO.html#run-time-polymorphism">-1.2.1.5. Run-time Polymorphism</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IntroOO.html#compile-time-polymorphism">-1.2.1.6. Compile-time Polymorphism</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IntroOO.html#abstraction">-1.2.1.7. Abstraction</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="IntroUML.html">-1.3. The Unified Modeling Language</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="IntroUML.html#id1">-1.3.1. The Unified Modeling Language</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="IntroUML.html#static-and-dynamic-diagrams">-1.3.1.1. Static and Dynamic Diagrams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IntroUML.html#class-diagrams">-1.3.1.2. Class Diagrams</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="IntroProcess.html">-1.4. Software Development Processes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="IntroProcess.html#id1">-1.4.1. Software Development Processes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="IntroProcess.html#waterfall-method">-1.4.1.1. Waterfall Method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IntroProcess.html#rational-unified-process">-1.4.1.2. Rational Unified Process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IntroProcess.html#other-plan-driven-approaches">-1.4.1.3. Other Plan-Driven Approaches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IntroProcess.html#extreme-programming-xp">-1.4.1.4. eXtreme Programming (XP)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IntroProcess.html#crystal">-1.4.1.5. Crystal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IntroProcess.html#scrum">-1.4.1.6. Scrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IntroProcess.html#feature-driven-development-fdd">-1.4.1.7. Feature-Driven Development (FDD)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="introduction-to-pointers-in-java">
+<h1><span class="sectnum">Chapter 5 </span>Introduction to Pointers in Java<a class="headerlink" href="#introduction-to-pointers-in-java" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="PointerIntro.html">-1.1. Pointers Chapter Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BasicPointers1.html">-1.2. Basic References Part 1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BasicPointers1.html#pointers-and-references">-1.2.1. Pointers and References</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BasicPointers1.html#what-is-a-pointer">-1.2.1.1. What is a Pointer?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BasicPointers1.html#what-is-a-reference">-1.2.1.2. What is a Reference?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="BasicPointers1.html#data-types-in-java">-1.2.2. Data Types in Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BasicPointers1.html#referencing-and-dereferencing">-1.2.3. Referencing and Dereferencing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BasicPointers1.html#changepointeedatadirect">-1.2.4. changePointeeDataDirect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BasicPointers1.html#the-employee-class">-1.2.5. The Employee Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BasicPointers1.html#reference-assignments">-1.2.6. Reference Assignments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BasicPointers1.html#circularlist1">-1.2.7. circularList1</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BasicPointers2.html">-1.3. Basic References Part 2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BasicPointers2.html#sharing">-1.3.1. Sharing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BasicPointers2.html#shallow-and-deep-copying">-1.3.2. Shallow and Deep Copying</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BasicPointers2.html#what-does-it-mean-to-copy">-1.3.2.1. What does it mean to copy?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="BasicPointers2.html#shallow-and-deep-comparing">-1.3.3. Shallow and Deep Comparing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BasicPointers2.html#bad-references">-1.3.4. Bad References</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BasicPointers2.html#why-are-bad-reference-bugs-so-common">-1.3.4.1. Why Are Bad Reference Bugs So Common?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Syntax.html">-1.4. Pointers Syntax</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Syntax.html#id1">-1.4.1. Syntax</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Syntax.html#declaring-a-reference-variable">-1.4.1.1. Declaring a Reference Variable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Syntax.html#assigning-a-pointee-to-a-reference">-1.4.1.2. Assigning a pointee to a reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Syntax.html#dereference-the-reference">-1.4.1.3. Dereference the reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Syntax.html#example-reference-code">-1.4.1.4. Example Reference Code</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Syntax.html#changeheadpointer1">-1.4.2. changeHeadPointer1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Syntax.html#reference-rules-summary">-1.4.2.1. Reference Rules Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Syntax.html#java-references-vs-pointers">-1.4.3. Java References vs Pointers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Syntax.html#how-are-references-implemented-in-the-machine">-1.4.4. How Are References Implemented In The Machine?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="LocalMem.html">-1.5. Local Memory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="LocalMem.html#id1">-1.5.1. Local Memory</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="LocalMem.html#thanks-for-the-memory-allocation-and-deallocation">-1.5.1.1. Thanks For The Memory: Allocation and Deallocation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LocalMem.html#local-parameters">-1.5.1.2. Local Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LocalMem.html#advantages-of-locals">-1.5.1.3. Advantages Of Locals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LocalMem.html#disadvantages-of-locals">-1.5.1.4. Disadvantages Of Locals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LocalMem.html#synonyms-for-local">-1.5.1.5. Synonyms For “Local”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LocalMem.html#local-memory-summary">-1.5.1.6. Local Memory Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LocalMem.html#how-does-the-function-call-stack-work">-1.5.1.7. How Does The Function Call Stack Work?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="HeapMem.html">-1.6. Heap Memory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="HeapMem.html#id1">-1.6.1. Heap Memory</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HeapMem.html#allocation">-1.6.1.1. Allocation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HeapMem.html#deallocation">-1.6.1.2. Deallocation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HeapMem.html#programming-the-heap">-1.6.1.3. Programming the Heap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HeapMem.html#a-heap-example">-1.6.1.4. A Heap Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HeapMem.html#arrays">-1.6.1.5. Arrays</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Links1.html">-1.7. Link Nodes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Links1.html#id1">-1.7.1. Link Nodes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Links2.html">-1.8. Link Nodes Practice Exercises</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Links2.html#createlist">-1.8.1. createList</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Links2.html#iterateoverlist">-1.8.2. iterateOverList</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Links2.html#changepointeenext1">-1.8.3. changePointeeNext1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Links2.html#addnodeathead">-1.8.4. addNodeAtHead</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Exercises.html">-1.9. Additional Practice Exercises</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Exercises.html#changeheadpointer2">-1.9.1. changeHeadPointer2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Exercises.html#changeqpointer">-1.9.2. changeQPointer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Exercises.html#changerpointer">-1.9.3. changeRPointer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Exercises.html#changepointeedataindirect">-1.9.4. changePointeeDataInDirect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Exercises.html#circularlist2">-1.9.5. circularList2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Exercises.html#circularlist3">-1.9.6. circularList3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Exercises.html#changepointeenext2">-1.9.7. changePointeeNext2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Exercises.html#findvalueinlist">-1.9.8. findValueInList</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Exercises.html#addnodeattail">-1.9.9. addNodeAtTail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Exercises.html#changenodesorder1">-1.9.10. changeNodesOrder1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Exercises.html#changenodesorder2">-1.9.11. changeNodesOrder2</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="mathematical-background">
+<h1><span class="sectnum">Chapter 6 </span>Mathematical Background<a class="headerlink" href="#mathematical-background" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="MathpreIntro.html">-1.1. Chapter Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SetDef.html">-1.2. Sets and Relations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="SetDef.html#set-notation">-1.2.1. Set Notation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="SetDef.html#relations">-1.2.1.1. Relations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="SetDef.html#equivalence-relations">-1.2.2. Equivalence Relations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SetDef.html#partial-orders">-1.2.3. Partial Orders</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="MiscMath.html">-1.3. Miscellaneous Notation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Logarithms.html">-1.4. Logarithms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Logarithms.html#id2">-1.4.1. Logarithms</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Summations.html">-1.5. Summations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Summations.html#id2">-1.5.1. Summations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="RecurrenceIntro.html">-1.6. Recurrence Relations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="RecurrenceIntro.html#id1">-1.6.1. Recurrence Relations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Proofs.html">-1.7. Mathematical Proof Techniques</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Proofs.html#id1">-1.7.1. Mathematical Proof Techniques</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Proofs.html#direct-proof">-1.7.1.1. Direct Proof</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Proofs.html#proof-by-contradiction">-1.7.1.2. Proof by Contradiction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Proofs.html#proof-by-mathematical-induction">-1.7.1.3. Proof by Mathematical Induction</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Estimation.html">-1.8. Estimation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MathpreSumm.html">-1.9. Chapter Summary Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="MathpreSumm.html#id1">-1.9.1. Chapter Summary Questions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="searching-i">
+<h1><span class="sectnum">Chapter 7 </span>Searching I<a class="headerlink" href="#searching-i" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="BinarySearch.html">-1.1. Searching in an Array</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BinarySearch.html#id1">-1.1.1. Searching in an Array</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BinarySearch.html#sequential-search">-1.1.1.1. Sequential Search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BinarySearch.html#binary-search">-1.1.1.2. Binary Search</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="algorithm-analysis">
+<h1><span class="sectnum">Chapter 8 </span>Algorithm Analysis<a class="headerlink" href="#algorithm-analysis" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="AnalChap.html">-1.1. Chapter Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AnalPrelim.html">-1.2. Problems, Algorithms, and Programs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="AnalPrelim.html#id1">-1.2.1. Problems, Algorithms, and Programs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="AnalPrelim.html#problems">-1.2.1.1. Problems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AnalPrelim.html#algorithms">-1.2.1.2. Algorithms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AnalPrelim.html#programs">-1.2.1.3. Programs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AnalPrelim.html#summary">-1.2.1.4. Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AnalPrelim.html#summary-questions">-1.2.1.5. Summary Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="AnalIntro.html">-1.3. Comparing Algorithms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="AnalIntro.html#id1">-1.3.1. Comparing Algorithms</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="AnalIntro.html#introduction">-1.3.1.1. Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AnalIntro.html#basic-operations-and-input-size">-1.3.1.2. Basic Operations and Input Size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AnalIntro.html#growth-rates">-1.3.1.3. Growth Rates</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="AnalIntro.html#growth-rates-ordering-exercise">-1.3.2. Growth Rates Ordering Exercise</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="AnalCases.html">-1.4. Best, Worst, and Average Cases</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="AnalCases.html#id1">-1.4.1. Best, Worst, and Average Cases</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="AnalCompvsAlg.html">-1.5. Faster Computer, or Faster Algorithm?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="AnalCompvsAlg.html#id1">-1.5.1. Faster Computer, or Faster Algorithm?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="AnalAsymptotic.html">-1.6. Asymptotic Analysis and Upper Bounds</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="AnalAsymptotic.html#id1">-1.6.1. Asymptotic Analysis and Upper Bounds</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="AnalAsymptotic.html#upper-bounds">-1.6.1.1. Upper Bounds</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AnalAsymptotic.html#simplifying-rules">-1.6.1.2. Simplifying Rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AnalAsymptotic.html#summary">-1.6.1.4. Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AnalAsymptotic.html#practice-questions">-1.6.1.5. Practice Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="AnalLower.html">-1.7. Lower Bounds and <span class="math notranslate nohighlight">\(\Theta\)</span> Notation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="AnalLower.html#id1">-1.7.1. Lower Bounds and Theta Notation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="AnalLower.html#lower-bounds">-1.7.1.1. Lower Bounds</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AnalLower.html#theta-notation">-1.7.1.2. Theta Notation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AnalLower.html#classifying-functions">-1.7.1.3. Classifying Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AnalLower.html#summary-exercise">-1.7.1.4. Summary Exercise</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="AnalProgram.html">-1.8. Calculating Program Running Time</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="AnalProgram.html#id1">-1.8.1. Calculating Program Running Time</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="AnalProgram.html#case-study-two-search-algorithms">-1.8.1.1. Case Study: Two Search Algorithms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AnalProgram.html#binary-search-practice-exercise">-1.8.1.2. Binary Search Practice Exercise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AnalProgram.html#analyzing-binary-search">-1.8.1.3. Analyzing Binary Search</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="AnalProgram.html#summary-exercise">-1.8.2. Summary Exercise</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="AnalProblem.html">-1.9. Analyzing Problems</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="AnalProblem.html#id1">-1.9.1. Analyzing Problems</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="AnalMisunderstanding.html">-1.10. Common Misunderstandings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="AnalMisunderstanding.html#id1">-1.10.1. Common Misunderstandings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="AnalMultiple.html">-1.11. Multiple Parameters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AnalSpace.html">-1.12. Space Bounds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AnalTuning.html">-1.13. Code Tuning and Empirical Analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="AnalTuning.html#id1">-1.13.1. Code Tuning and Empirical Analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="AnalTuning.html#empirical-analysis">-1.13.1.1. Empirical Analysis</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="AlgAnalSummCS2.html">-1.14. Algorithm Analysis Summary Exercises</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="AlgAnalSummCS2.html#summary-exercise-cs2">-1.14.1. Summary Exercise: CS2</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="AlgAnalSummCS3.html">-1.15. Algorithm Analysis Summary Exercises</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="AlgAnalSummCS3.html#summary-exercise-cs3">-1.15.1. Summary Exercise: CS3</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="linear-structures">
+<h1><span class="sectnum">Chapter 9 </span>Linear Structures<a class="headerlink" href="#linear-structures" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ListIntro.html">-1.1. Chapter Introduction: Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ListADT.html">-1.2. The List ADT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ListADT.html#id1">-1.2.1. The List ADT</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ListADT.html#defining-the-adt">-1.2.1.1. Defining the ADT</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ListADT.html#list-adt-programming-exercise">-1.2.2. List ADT Programming Exercise</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ListArray.html">-1.3. Array-Based List Implementation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ListArray.html#id1">-1.3.1. Array-Based List Implementation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ListArray.html#insert">-1.3.1.1. Insert</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListArray.html#insert-practice-exericse">-1.3.1.2. Insert Practice Exericse</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ListArray.html#append-and-remove">-1.3.2. Append and Remove</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ListArray.html#remove-practice-exericise">-1.3.2.1. Remove Practice Exericise</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ListArray.html#array-based-list-practice-questions">-1.3.3. Array-based List Practice Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ListLinked.html">-1.4. Linked Lists</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ListLinked.html#id1">-1.4.1. Linked Lists</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ListLinked.html#why-this-has-problems">-1.4.1.1. Why This Has Problems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListLinked.html#a-better-solution">-1.4.1.2. A Better Solution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListLinked.html#linked-list-implementation">-1.4.1.3. Linked List Implementation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ListLinked.html#linked-list-remove">-1.4.2. Linked List Remove</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ListAnalysis.html">-1.5. Comparison of List Implementations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ListAnalysis.html#space-comparison">-1.5.1. Space Comparison</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListAnalysis.html#time-comparison">-1.5.2. Time Comparison</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ListAnalysis.html#practice-questions">-1.5.2.1. Practice Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ListDouble.html">-1.6. Doubly Linked Lists</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ListDouble.html#id1">-1.6.1. Doubly Linked Lists</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ListDouble.html#insert">-1.6.1.1. Insert</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListDouble.html#append">-1.6.1.2. Append</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListDouble.html#remove">-1.6.1.3. Remove</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListDouble.html#prev">-1.6.1.4. Prev</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListDouble.html#mangling-pointers">-1.6.1.5. Mangling Pointers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ListElement.html">-1.7. List Element Implementations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ListElement.html#id1">-1.7.1. List Element Implementations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ListElement.html#homogeneity">-1.7.1.1. Homogeneity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListElement.html#element-deletion">-1.7.1.2. Element Deletion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListElement.html#practice-questions">-1.7.1.3. Practice Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="StackArray.html">-1.8. Stacks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="StackArray.html#stack-terminology-and-implementation">-1.8.1. Stack Terminology and Implementation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="StackArray.html#array-based-stacks">-1.8.1.1. Array-Based Stacks</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="StackArray.html#pop">-1.8.2. Pop</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="StackLinked.html">-1.9. Linked Stacks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="StackLinked.html#linked-stack-implementation">-1.9.1. Linked Stack Implementation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="StackLinked.html#linked-stack-push">-1.9.1.1. Linked Stack Push</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="StackLinked.html#linked-stack-pop">-1.9.2. Linked Stack Pop</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="StackLinked.html#comparison-of-array-based-and-linked-stacks">-1.9.2.1. Comparison of Array-Based and Linked Stacks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Freelist.html">-1.10. Freelists</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Freelist.html#id1">-1.10.1. Freelists</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="StackRecur.html">-1.11. Implementing Recursion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Queue.html">-1.12. Queues</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Queue.html#queue-terminology-and-implementation">-1.12.1. Queue Terminology and Implementation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Queue.html#array-based-queues">-1.12.1.1. Array-Based Queues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Queue.html#the-circular-queue">-1.12.1.2. The Circular Queue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Queue.html#array-based-queue-implementation">-1.12.1.3. Array-based Queue Implementation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Queue.html#array-based-dequeue-practice">-1.12.2. Array-based Dequeue Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="QueueLinked.html">-1.13. Linked Queues</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="QueueLinked.html#id1">-1.13.1. Linked Queues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QueueLinked.html#linked-dequeue">-1.13.2. Linked Dequeue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QueueLinked.html#comparison-of-array-based-and-linked-queues">-1.13.3. Comparison of Array-Based and Linked Queues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="QueueLinked.html#stack-and-queue-summary-questions">-1.13.3.1. Stack and Queue Summary Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ListSumm.html">-1.14. Linear Structure Summary Exercises</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ListSumm.html#practice-questions">-1.14.1. Practice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListSumm.html#chapter-review-questions">-1.14.2. Chapter Review Questions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="recursion">
+<h1><span class="sectnum">Chapter 10 </span>Recursion<a class="headerlink" href="#recursion" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="RecIntro.html">-1.1. Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="RecIntro.html#id1">-1.1.1. Introduction</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Write.html">-1.2. Writing a recursive function</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Write.html#id1">-1.2.1. Writing a recursive function</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CodeCompletionEx.html">-1.3. Code Completion Practice Exercises</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CodeCompletionEx.html#introduction">-1.3.1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CodeCompletionEx.html#recursion-programming-exercise-largest">-1.3.2. Recursion Programming Exercise: Largest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CodeCompletionEx.html#recursion-programming-exercise-multiply">-1.3.3. Recursion Programming Exercise: Multiply</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CodeCompletionEx.html#recursion-programming-exercise-gcd">-1.3.4. Recursion Programming Exercise: GCD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CodeCompletionEx.html#recursion-programming-exercise-log">-1.3.5. Recursion Programming Exercise: log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CodeCompletionEx.html#recursion-programming-exercise-cummulative-sum">-1.3.6. Recursion Programming Exercise: Cummulative Sum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CodeCompletionEx.html#recursion-programming-exercise-add-odd-values">-1.3.7. Recursion Programming Exercise: Add odd values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CodeCompletionEx.html#recursion-programming-exercise-sum-of-the-digits">-1.3.8. Recursion Programming Exercise: Sum Of the Digits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CodeCompletionEx.html#recursion-programming-exercise-count-characters">-1.3.9. Recursion Programming Exercise: Count Characters</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="HarderWrite.html">-1.4. Writing More Sophisticated Recursive Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HarderCodeCompletionEx.html">-1.5. Harder Code Completion Practice Exercises</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="HarderCodeCompletionEx.html#recursion-programming-exercise-minimum-of-array">-1.5.1. Recursion Programming Exercise: Minimum of array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HarderCodeCompletionEx.html#recursion-programming-exercise-is-reverse">-1.5.2. Recursion Programming Exercise: Is Reverse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HarderCodeCompletionEx.html#recursion-programming-exercise-decimal-to-binary">-1.5.3. Recursion Programming Exercise: Decimal to Binary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="WritingEx.html">-1.6. Writing Practice Exercises</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="WritingEx.html#recursion-programming-exercise-cannonballs">-1.6.1. Recursion Programming Exercise: Cannonballs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WritingEx.html#recursion-programming-exercise-check-palindrome">-1.6.2. Recursion Programming Exercise: Check Palindrome</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WritingEx.html#recursion-programming-exercise-subset-sum">-1.6.3. Recursion Programming Exercise: Subset Sum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WritingEx.html#recursion-programming-exercise-pascal-triangle">-1.6.4. Recursion Programming Exercise: Pascal Triangle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Trace.html">-1.7. Tracing Recursive Code</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Trace.html#id1">-1.7.1. Tracing Recursive Code</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Trace.html#a-domino-analogy">-1.7.1.1. A Domino Analogy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Trace.html#towers-of-hanoi">-1.7.1.2. Towers of Hanoi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="TracingEx.html">-1.8. Tracing Practice Exercises</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="TracingEx.html#forward-flow-tracing-exercises">-1.8.1. Forward Flow Tracing Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TracingEx.html#backward-flow-tracing-exercises">-1.8.2. Backward Flow Tracing Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TracingEx.html#find-error-tracing-exercises">-1.8.3. Find Error Tracing Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TracingEx.html#two-recursive-calls-tracing-exercises">-1.8.4. Two Recursive Calls Tracing Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TracingEx.html#how-many-times-tracing-exercises">-1.8.5. How Many Times Tracing Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TracingEx.html#harder-tracing-exercises">-1.8.6. Harder Tracing Exercises</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="RecSummaryEx.html">-1.9. Recursion Summary Exercises</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="RecSummaryEx.html#recursion-summary-questions">-1.9.1. Recursion Summary Questions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="design-ii">
+<h1><span class="sectnum">Chapter 11 </span>Design II<a class="headerlink" href="#design-ii" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="DesignPatterns.html">-1.1. Design Patterns</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="DesignPatterns.html#id1">-1.1.1. Design Patterns</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="DesignPatterns.html#flyweight">-1.1.1.1. Flyweight</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DesignPatterns.html#visitor">-1.1.1.2. Visitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DesignPatterns.html#composite">-1.1.1.3. Composite</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DesignPatterns.html#strategy">-1.1.1.4. Strategy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DesignPatterns.html#summary-questions">-1.1.1.5. Summary Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="DesignAltList.html">-1.2. Alternative List ADT Designs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Comparison.html">-1.3. Comparing Records</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Comparison.html#id1">-1.3.1. Comparing Records</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Dictionary.html">-1.4. The Dictionary ADT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Dictionary.html#id1">-1.4.1. The Dictionary ADT</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="binary-trees">
+<h1><span class="sectnum">Chapter 12 </span>Binary Trees<a class="headerlink" href="#binary-trees" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="BinaryTreeIntro.html">-1.1. Binary Trees Chapter Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BinaryTree.html">-1.2. Binary Trees</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTree.html#definitions-and-properties">-1.2.1. Definitions and Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTree.html#practice-questions">-1.2.2. Practice Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="RecursiveDS.html">-1.3. Binary Tree as a Recursive Data Structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="RecursiveDS.html#id1">-1.3.1. Binary Tree as a Recursive Data Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BinaryTreeFullThm.html">-1.4. The Full Binary Tree Theorem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BinaryTreeTraversal.html">-1.5. Binary Tree Traversals</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeTraversal.html#id1">-1.5.1. Binary Tree Traversals</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BinaryTreeTraversal.html#preorder-traversal">-1.5.1.1. Preorder Traversal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BinaryTreeTraversal.html#postorder-traversal">-1.5.1.2. Postorder Traversal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BinaryTreeTraversal.html#inorder-traversal">-1.5.1.3. Inorder Traversal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BinaryTreeTraversal.html#implementation">-1.5.1.4. Implementation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeTraversal.html#postorder-traversal-practice">-1.5.2. Postorder Traversal Practice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeTraversal.html#inorder-traversal-practice">-1.5.3. Inorder Traversal Practice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeTraversal.html#summary-questions">-1.5.4. Summary Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="WritingTraversals.html">-1.6. Implementing Tree Traversals</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="WritingTraversals.html#id1">-1.6.1. Implementing Tree Traversals</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="WritingTraversals.html#base-case">-1.6.1.1. Base Case</a></li>
+<li class="toctree-l3"><a class="reference internal" href="WritingTraversals.html#the-recursive-call">-1.6.1.2. The Recursive Call</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="WritingTraversals.html#binary-tree-increment-by-one-exercise">-1.6.2. Binary Tree Increment By One Exercise</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BinaryTreeInfFlw.html">-1.7. Information Flow in Recursive Functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeInfFlw.html#id1">-1.7.1. Information Flow in Recursive Functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BinaryTreeInfFlw.html#local">-1.7.1.1. Local</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BinaryTreeInfFlw.html#passing-down-information">-1.7.1.2. Passing Down Information</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeInfFlw.html#binary-tree-set-depth-exercise">-1.7.2. Binary Tree Set Depth Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeInfFlw.html#collect-and-return">-1.7.3. Collect-and-return</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeInfFlw.html#binary-tree-check-sum-exercise">-1.7.4. Binary Tree Check Sum Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeInfFlw.html#binary-tree-leaf-nodes-count-exercise">-1.7.5. Binary Tree Leaf Nodes Count Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeInfFlw.html#binary-tree-sum-nodes-exercise">-1.7.6. Binary Tree Sum Nodes Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeInfFlw.html#combining-information-flows">-1.7.7. Combining Information Flows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeInfFlw.html#binary-tree-check-value-exercise">-1.7.8. Binary Tree Check Value Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeInfFlw.html#combination-problems">-1.7.9. Combination Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeInfFlw.html#binary-tree-height-exercise">-1.7.10. Binary Tree Height Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeInfFlw.html#binary-tree-get-difference-exercise">-1.7.11. Binary Tree Get Difference Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeInfFlw.html#binary-tree-has-path-sum-exercise">-1.7.12. Binary Tree Has Path Sum Exercise</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BinaryTreeImpl.html">-1.8. Binary Tree Node Implementations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeImpl.html#id1">-1.8.1. Binary Tree Node Implementations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Composite.html">-1.9. Composite-based Expression Tree</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Composite.html#id1">-1.9.1. Composite-based Expression Tree</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BinaryTreeNodeSpace.html">-1.10. Binary Tree Space Requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeNodeSpace.html#id1">-1.10.1. Binary Tree Space Requirements</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BST.html">-1.11. Binary Search Trees</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BST.html#binary-search-tree-definition">-1.11.1. Binary Search Tree Definition</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BST.html#bst-search">-1.11.1.1. BST Search</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="BST.html#bst-insert">-1.11.2. BST Insert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BST.html#bst-remove">-1.11.3. BST Remove</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BST.html#bst-analysis">-1.11.4. BST Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BSTDict.html">-1.12. Dictionary Implementation Using a BST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BinaryTreeGuidedInfFlw.html">-1.13. Binary Tree Guided Information Flow</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeGuidedInfFlw.html#id1">-1.13.1. Binary Tree Guided Information Flow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BinaryTreeGuidedInfFlw.html#binary-search-tree-small-count-exercise">-1.13.2. Binary Search Tree Small Count Exercise</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="MultipleBinaryTrees.html">-1.14. Multiple Binary Trees</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="MultipleBinaryTrees.html#mirror-image-binary-trees-exercise">-1.14.1. Mirror Image Binary Trees Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MultipleBinaryTrees.html#same-binary-tree-exercise">-1.14.2. Same Binary Tree Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MultipleBinaryTrees.html#structurally-identical-binary-trees-exercise">-1.14.3. Structurally Identical Binary Trees Exercise</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BSTCheck.html">-1.15. A Hard Information Flow Problem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CompleteTree.html">-1.16. Array Implementation for Complete Binary Trees</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompleteTree.html#id1">-1.16.1. Array Implementation for Complete Binary Trees</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Heaps.html">-1.17. Heaps and Priority Queues</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Heaps.html#id1">-1.17.1. Heaps and Priority Queues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Heaps.html#building-a-heap">-1.17.2. Building a Heap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Heaps.html#removing-from-the-heap-or-updating-an-object-s-priority">-1.17.3. Removing from the heap or updating an object’s priority</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Heaps.html#priority-queues">-1.17.4. Priority Queues</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Huffman.html">-1.18. Huffman Coding Trees</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Huffman.html#id1">-1.18.1. Huffman Coding Trees</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Huffman.html#building-huffman-coding-trees">-1.18.1.1. Building Huffman Coding Trees</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Huffman.html#decoding">-1.18.1.2. Decoding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Huffman.html#how-efficient-is-huffman-coding">-1.18.1.3. How efficient is Huffman coding?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="TreeTrie.html">-1.19. Trees versus Tries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="TreeTrie.html#id1">-1.19.1. Trees versus Tries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="HuffProof.html">-1.20. Proof of Optimality for Huffman Coding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="HuffProof.html#id1">-1.20.1. Proof of Optimality for Huffman Coding</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BinaryChapSumm.html">-1.21. Binary Tree Chapter Summary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BinaryChapSumm.html#summary-questions">-1.21.1. Summary Questions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="sorting">
+<h1><span class="sectnum">Chapter 13 </span>Sorting<a class="headerlink" href="#sorting" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="InSort.html">-1.1. Chapter Introduction: Sorting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SortNotation.html">-1.2. Sorting Terminology and Notation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="SortNotation.html#id1">-1.2.1. Sorting Terminology and Notation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="InsertionSort.html">-1.3. Insertion Sort</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="InsertionSort.html#id1">-1.3.1. Insertion Sort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="InsertionSort.html#insertion-sort-analysis">-1.3.2. Insertion Sort Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BubbleSort.html">-1.4. Bubble Sort</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BubbleSort.html#id1">-1.4.1. Bubble Sort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BubbleSort.html#bubble-sort-analysis">-1.4.2. Bubble Sort Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SelectionSort.html">-1.5. Selection Sort</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="SelectionSort.html#id1">-1.5.1. Selection Sort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SelectionSort.html#selection-sort-analysis">-1.5.2. Selection Sort Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ExchangeSort.html">-1.6. The Cost of Exchange Sorting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ExchangeSort.html#id1">-1.6.1. The Cost of Exchange Sorting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ExchangeSort.html#analysis">-1.6.2. Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SortOpt.html">-1.7. Optimizing Sort Algorithms with Code Tuning</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="SortOpt.html#code-tuning-for-simple-sorting-algorithms">-1.7.1. Code Tuning for Simple Sorting Algorithms</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Shellsort.html">-1.8. Shellsort</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Shellsort.html#id2">-1.8.1. Shellsort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Shellsort.html#putting-it-together">-1.8.2. Putting It Together</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Shellsort.html#shellsort-practice-exercise">-1.8.3. Shellsort Practice Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Shellsort.html#optimizing-shellsort">-1.8.4. Optimizing Shellsort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Shellsort.html#shellsort-summary-questions">-1.8.5. Shellsort Summary Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Mergesort.html">-1.9. Mergesort Concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Mergesort.html#id1">-1.9.1. Mergesort Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Mergesort.html#mergesort-practice-exercise">-1.9.2. Mergesort Practice Exercise</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="MergesortImpl.html">-1.10. Implementing Mergesort</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="MergesortImpl.html#id1">-1.10.1. Implementing Mergesort</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Quicksort.html">-1.11. Quicksort</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Quicksort.html#introduction">-1.11.1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Quicksort.html#partition">-1.11.2. Partition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Quicksort.html#putting-it-together">-1.11.3. Putting It Together</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Quicksort.html#quicksort-analysis">-1.11.4. Quicksort Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Heapsort.html">-1.12. Heapsort</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Heapsort.html#id2">-1.12.1. Heapsort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Heapsort.html#heapsort-proficiency-practice">-1.12.2. Heapsort Proficiency Practice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Heapsort.html#heapsort-analysis">-1.12.3. Heapsort Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BinSort.html">-1.13. Binsort</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BinSort.html#id2">-1.13.1. Binsort</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="RadixSort.html">-1.14. Radix Sort</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="RadixSort.html#id1">-1.14.1. Radix Sort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RadixSort.html#array-based-radix-sort">-1.14.2. Array-based Radix Sort</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="RadixSort.html#radix-sort-analysis">-1.14.2.1. Radix Sort Analysis</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SortingEmpirical.html">-1.15. An Empirical Comparison of Sorting Algorithms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="SortingEmpirical.html#id1">-1.15.1. An Empirical Comparison of Sorting Algorithms</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SortingLowerBound.html">-1.16. Lower Bounds for Sorting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="SortingLowerBound.html#id1">-1.16.1. Lower Bounds for Sorting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SortSumm.html">-1.17. Sorting Summary Exercises</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="SortSumm.html#id1">-1.17.1. Sorting Summary Exercises</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="file-processing">
+<h1><span class="sectnum">Chapter 14 </span>File Processing<a class="headerlink" href="#file-processing" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="FileProc.html">-1.1. Chapter Introduction: File Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Secondary.html">-1.2. Primary versus Secondary Storage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Diskdrive.html">-1.3. Disk Drives</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Diskdrive.html#id1">-1.3.1. Disk Drives</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Diskdrive.html#disk-drive-architecture">-1.3.1.1. Disk Drive Architecture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Diskdrive.html#disk-access-costs">-1.3.1.2. Disk Access Costs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Diskdrive.html#notes">-1.3.1.3. Notes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BuffPool.html">-1.4. Buffer Pools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BuffPool.html#id1">-1.4.1. Buffer Pools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BuffPool.html#replacement-strategies">-1.4.1.1. Replacement Strategies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BuffPool.html#the-dirty-bit">-1.4.1.2. The Dirty Bit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BuffPool.html#implementing-buffer-pools">-1.4.1.3. Implementing Buffer Pools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="FileProg.html">-1.5. The Programmer’s View of Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ExternalSort.html">-1.6. External Sorting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ExternalSort.html#id1">-1.6.1. External Sorting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ExternalSort.html#simple-approaches-to-external-sorting">-1.6.1.1. Simple Approaches to External Sorting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ExternalSort.html#improving-performance">-1.6.1.2. Improving Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ExternalSort.html#replacement-selection">-1.6.1.3. Replacement Selection</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ExternalSort.html#multiway-merging">-1.6.2. Multiway Merging</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ExternalSort.html#empirical-results">-1.6.2.1. Empirical Results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ExternalSort.html#summary">-1.6.2.2. Summary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="hashing">
+<h1><span class="sectnum">Chapter 15 </span>Hashing<a class="headerlink" href="#hashing" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="HashIntro.html">-1.1. Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="HashIntro.html#id1">-1.1.1. Introduction</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="HashFunc.html">-1.2. Hash Function Principles</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="HashFunc.html#id1">-1.2.1. Hash Function Principles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="HashFuncExamp.html">-1.3. Sample Hash Functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="HashFuncExamp.html#id1">-1.3.1. Sample Hash Functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HashFuncExamp.html#simple-mod-function">-1.3.1.1. Simple Mod Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HashFuncExamp.html#binning">-1.3.1.2. Binning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HashFuncExamp.html#the-mid-square-method">-1.3.1.3. The Mid-Square Method</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HashFuncExamp.html#a-simple-hash-function-for-strings">-1.3.2. A Simple Hash Function for Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HashFuncExamp.html#string-folding">-1.3.3. String Folding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HashFuncExamp.html#hash-function-practice">-1.3.4. Hash Function Practice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HashFuncExamp.html#hash-function-review-questions">-1.3.5. Hash Function Review Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="OpenHash.html">-1.4. Open Hashing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="OpenHash.html#id1">-1.4.1. Open Hashing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BucketHash.html">-1.5. Bucket Hashing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BucketHash.html#id1">-1.5.1. Bucket Hashing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BucketHash.html#an-alternate-approach">-1.5.2. An Alternate Approach</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="HashCSimple.html">-1.6. Collision Resolution</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="HashCSimple.html#id1">-1.6.1. Collision Resolution</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HashCSimple.html#the-problem-with-linear-probing">-1.6.1.1. The Problem with Linear Probing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="HashCImproved.html">-1.7. Improved Collision Resolution</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="HashCImproved.html#linear-probing-by-steps">-1.7.1. Linear Probing by Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HashCImproved.html#pseudo-random-probing">-1.7.2. Pseudo-Random Probing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HashCImproved.html#quadratic-probing">-1.7.3. Quadratic Probing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HashCImproved.html#double-hashing">-1.7.4. Double Hashing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="HashAnal.html">-1.8. Analysis of Closed Hashing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="HashAnal.html#id1">-1.8.1. Analysis of Closed Hashing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="HashDel.html">-1.9. Deletion</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="HashDel.html#id1">-1.9.1. Deletion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HashDel.html#hashing-deletion-summary-questions">-1.9.2. Hashing Deletion Summary Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="HashSumm.html">-1.10. Hashing Chapter Summary Exercises</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="HashSumm.html#hashing-review">-1.10.1. Hashing Review</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="memory-management">
+<h1><span class="sectnum">Chapter 16 </span>Memory Management<a class="headerlink" href="#memory-management" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="MemmanIntro.html">-1.1. Chapter Introduction: Memory Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dynamic.html">-1.2. Dynamic Storage Allocation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Dynamic.html#id1">-1.2.1. Dynamic Storage Allocation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SequentialFit.html">-1.3. Sequential-Fit Methods</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="SequentialFit.html#id1">-1.3.1. Sequential-Fit Methods</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="FirstFit.html">-1.4. First Fit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="FirstFit.html#id1">-1.4.1. First Fit</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CircularFit.html">-1.5. Circular First Fit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CircularFit.html#id1">-1.5.1. Circular First Fit</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BestFit.html">-1.6. Best Fit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BestFit.html#id1">-1.6.1. Best Fit</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="WorstFit.html">-1.7. Worst Fit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="WorstFit.html#id1">-1.7.1. Worst Fit</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="MMPerformance.html">-1.8. Sequential Fit Peformance</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="MMPerformance.html#id1">-1.8.1. Sequential Fit Peformance</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Buddy.html">-1.9. Other Memory Allocation Methods</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Buddy.html#id1">-1.9.1. Other Memory Allocation Methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Buddy.html#buddy-methods">-1.9.1.1. Buddy Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Buddy.html#other-methods">-1.9.1.2. Other Methods</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Garbage.html">-1.10. Failure Policies and Garbage Collection</a></li>
+</ul>
+</div>
+</section>
+<section id="indexing">
+<h1><span class="sectnum">Chapter 17 </span>Indexing<a class="headerlink" href="#indexing" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="IndexIntro.html">-1.1. Indexing Chapter Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LinearIndexing.html">-1.2. Linear Indexing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="LinearIndexing.html#id1">-1.2.1. Linear Indexing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ISAM.html">-1.3. ISAM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TreeIndexing.html">-1.4. Tree-based Indexing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="TreeIndexing.html#id1">-1.4.1. Tree-based Indexing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="TwoThreeTree.html">-1.5. 2-3 Trees</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="TwoThreeTree.html#id1">-1.5.1. 2-3 Trees</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BTree.html">-1.6. B-Trees</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BTree.html#id1">-1.6.1. B-Trees</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BTree.html#id2">-1.6.1.1. B+ Trees</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BTree.html#b-tree-analysis">-1.6.1.2. B-Tree Analysis</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="IndexingSumm.html">-1.7. Indexing Summary Exercises</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="IndexingSumm.html#indexing-summary">-1.7.1. Indexing Summary</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="general-trees">
+<h1><span class="sectnum">Chapter 18 </span>General Trees<a class="headerlink" href="#general-trees" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="GenTreeIntro.html">-1.1. General Trees</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="GenTreeIntro.html#id1">-1.1.1. General Trees</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="GenTreeIntro.html#general-tree-definitions-and-terminology">-1.1.1.1. General Tree Definitions and Terminology</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GenTreeIntro.html#an-adt-for-general-tree-nodes">-1.1.1.2. An ADT for General Tree Nodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GenTreeIntro.html#general-tree-traversals">-1.1.1.3. General Tree Traversals</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="UnionFind.html">-1.2. Union/Find and the Parent Pointer Implementation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="UnionFind.html#the-union-find-problem">-1.2.1. The Union/Find Problem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="UnionFind.html#parent-pointer-trees">-1.2.1.1. Parent Pointer Trees</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UnionFind.html#equivalence-classes">-1.2.1.2. Equivalence Classes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UnionFind.html#weighted-union">-1.2.1.3. Weighted Union</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UnionFind.html#path-compression">-1.2.1.4. Path Compression</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SequentialRep.html">-1.3. Sequential Tree Representations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="SequentialRep.html#id1">-1.3.1. Sequential Tree Representations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SequentialRep.html#alternative-sequential-representation">-1.3.2. Alternative Sequential Representation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SequentialRep.html#bit-vector-representation">-1.3.3. Bit Vector Representation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SequentialRep.html#general-tree-sequential-representation">-1.3.4. General Tree Sequential Representation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="graphs">
+<h1><span class="sectnum">Chapter 19 </span>Graphs<a class="headerlink" href="#graphs" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="GraphIntro.html">-1.1. Graphs Chapter Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="GraphIntro.html#graph-terminology-and-implementation">-1.1.1. Graph Terminology and Implementation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="GraphIntro.html#graph-representations">-1.1.1.1. Graph Representations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="GraphIntro.html#graph-terminology-questions">-1.1.2. Graph Terminology Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="GraphImpl.html">-1.2. Graph Implementations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GraphTraversal.html">-1.3. Graph Traversals</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="GraphTraversal.html#id1">-1.3.1. Graph Traversals</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="GraphTraversal.html#depth-first-search">-1.3.1.1. Depth-First Search</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="GraphTraversal.html#breadth-first-search">-1.3.2. Breadth-First Search</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="GraphTopsort.html">-1.4. Topological Sort</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="GraphTopsort.html#id1">-1.4.1. Topological Sort</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="GraphTopsort.html#depth-first-solution">-1.4.1.1. Depth-first solution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GraphTopsort.html#queue-based-solution">-1.4.1.2. Queue-based Solution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="GraphShortest.html">-1.5. Shortest-Paths Problems</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="GraphShortest.html#id1">-1.5.1. Shortest-Paths Problems</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="GraphShortest.html#single-source-shortest-paths">-1.5.1.1. Single-Source Shortest Paths</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="MCST.html">-1.6. Minimal Cost Spanning Trees</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="MCST.html#id1">-1.6.1. Minimal Cost Spanning Trees</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="MCST.html#prim-s-algorithm">-1.6.1.1. Prim’s Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MCST.html#prim-s-algorithm-alternative-implementation">-1.6.1.2. Prim’s Algorithm Alternative Implementation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Kruskal.html">-1.7. Kruskal’s Algorithm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Kruskal.html#id1">-1.7.1. Kruskal’s Algorithm</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Floyd.html">-1.8. All-Pairs Shortest Paths</a></li>
+</ul>
+</div>
+</section>
+<section id="spatial-data-structures">
+<h1><span class="sectnum">Chapter 20 </span>Spatial Data Structures<a class="headerlink" href="#spatial-data-structures" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Spatial.html">-1.1. Spatial Data Structures</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Spatial.html#id1">-1.1.1. Spatial Data Structures</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Spatial.html#multdimensional-keys">-1.1.1.1. Multdimensional Keys</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PRquadtree.html">-1.2. The PR Quadtree</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PRquadtree.html#id1">-1.2.1. The PR Quadtree</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="KDtree.html">-1.3. KD Trees</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="KDtree.html#id1">-1.3.1. KD Trees</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Bintree.html">-1.4. The Bintree</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Bintree.html#id1">-1.4.1. The Bintree</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Bintree.html#implementation-concerns">-1.4.1.1. Implementation Concerns</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="OtherSpatial.html">-1.5. Other Spatial Data Structures</a></li>
+</ul>
+</div>
+</section>
+<section id="senior-algorithms-course">
+<h1><span class="sectnum">Chapter 21 </span>Senior Algorithms Course<a class="headerlink" href="#senior-algorithms-course" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="AAIntro.html">-1.1. Data and Algorithm Analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="AAIntro.html#introduction">-1.1.1. Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="AAIntro.html#prerequisites">-1.1.1.1. Prerequisites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AAIntro.html#what-we-will-do">-1.1.1.2. What we will do</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AAIntro.html#process">-1.1.1.3. Process</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ProblemSolving.html">-1.2. An Introduction to Problem Solving</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ProblemSolving.html#id1">-1.2.1. An Introduction to Problem Solving</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ProblemSolving.html#investigation-and-argument">-1.2.1.1. Investigation and Argument</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ProblemSolving.html#heuristics-for-problem-solving-in-the-small">-1.2.1.2. Heuristics for Problem Solving “In the Small”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ProblemSolving.html#problem-solving-in-the-large">-1.2.1.3. Problem Solving “In the Large”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ProblemSolving.html#pairs-problem-solving">-1.2.1.4. Pairs Problem Solving</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ProblemSolving.html#errors-in-reasoning">-1.2.1.5. Errors in Reasoning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ProblemSolving.html#references">-1.2.1.6. References</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="AAOverview.html">-1.3. Semester Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="AAOverview.html#id1">-1.3.1. Semester Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="AAOverview.html#modeling-algorithm-cost">-1.3.1.1. Modeling Algorithm Cost</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AAOverview.html#big-issues">-1.3.1.2. Big Issues</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="TOH.html">-1.4. Introduction to Analyzing a Problem</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="TOH.html#towers-of-hanoi">-1.4.1. Towers of Hanoi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="TOH.html#the-model">-1.4.1.1. The Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="TOH.html#finding-an-algorithm">-1.4.1.2. Finding an Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="TOH.html#analysis-of-the-algorithm">-1.4.1.3. Analysis of the Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="TOH.html#lower-bound-for-the-problem">-1.4.1.4. Lower Bound for the Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="TOH.html#new-models">-1.4.1.5. New Models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="TOH.html#putting-it-all-together">-1.4.1.6. Putting it all Together</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BoundsReview.html">-1.5. Bounds Review</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BoundsReview.html#id1">-1.5.1. Bounds Review</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BoundsReview.html#analyzing-problems">-1.5.1.1. Analyzing Problems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BoundsReview.html#modeling-the-inputs">-1.5.1.2. Modeling the Inputs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="GrowthRate.html">-1.6. Growth Rates Review</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="GrowthRate.html#id1">-1.6.1. Growth Rates Review</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="GrowthRate.html#asymptotic-notation">-1.6.1.1. Asymptotic Notation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="AdvSumm.html">-1.7. Summation Techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Recurrence.html">-1.8. Solving Recurrence Relations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Recurrence.html#id1">-1.8.1. Solving Recurrence Relations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Recurrence.html#estimating-upper-and-lower-bounds">-1.8.1.1. Estimating Upper and Lower Bounds</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Recurrence.html#expanding-recurrences">-1.8.1.2. Expanding Recurrences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Recurrence.html#divide-and-conquer-recurrences">-1.8.1.3. Divide-and-Conquer Recurrences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Recurrence.html#average-case-analysis-of-quicksort">-1.8.1.4. Average-Case Analysis of Quicksort</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="searching">
+<h1><span class="sectnum">Chapter 22 </span>Searching<a class="headerlink" href="#searching" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="SearchIntro.html">-1.1. Chapter Introduction: Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UnsortedSearch.html">-1.2. Analyzing Search in Unsorted Lists</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="UnsortedSearch.html#id1">-1.2.1. Analyzing Search in Unsorted Lists</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="UnsortedSearch.html#lower-bounds-proofs">-1.2.1.1. Lower Bounds Proofs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SortedSearch.html">-1.3. Search in Sorted Arrays</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="SortedSearch.html#analysis">-1.3.1. Analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="SortedSearch.html#jump-search">-1.3.1.1. Jump Search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SortedSearch.html#binary-search">-1.3.1.2. Binary Search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SortedSearch.html#lower-bounds-proof">-1.3.1.3. Lower Bounds Proof</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SortedSearch.html#interpolation-and-quadratic-binary-search">-1.3.1.4. Interpolation and Quadratic Binary Search</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SelfOrg.html">-1.4. Self-Organizing Lists</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="SelfOrg.html#introduction">-1.4.1. Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="SelfOrg.html#frequency-count">-1.4.1.1. Frequency Count</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="SelfOrg.html#move-to-front">-1.4.2. Move to Front</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SelfOrg.html#transpose">-1.4.3. Transpose</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="SelfOrg.html#an-example">-1.4.3.1. An Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SetSearch.html">-1.5. Bit Vectors for Representing Sets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PerfectHash.html">-1.6. Perfect Hashing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PerfectHash.html#id1">-1.6.1. Perfect Hashing</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="lower-bounds">
+<h1><span class="sectnum">Chapter 23 </span>Lower Bounds<a class="headerlink" href="#lower-bounds" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="BoundMax.html">-1.1. Finding the Maximum Value</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BoundMax.html#id1">-1.1.1. Finding the Maximum Value</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BoundAdversary.html">-1.2. Adversarial Lower Bounds Proofs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BoundState.html">-1.3. State Space Lower Bounds Proofs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BoundiBest.html">-1.4. Finding the <span class="math notranslate nohighlight">\(i\)</span> th Best Element</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SortingOptimal.html">-1.5. Optimal Sorting</a></li>
+</ul>
+</div>
+</section>
+<section id="number-problems">
+<h1><span class="sectnum">Chapter 24 </span>Number Problems<a class="headerlink" href="#number-problems" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Numeric.html">-1.1. Number Problems</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Numeric.html#id1">-1.1.1. Number Problems</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Numeric.html#introduction">-1.1.1.1. Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Numeric.html#exponentiation">-1.1.1.2. Exponentiation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Numeric.html#largest-common-factor">-1.1.1.3. Largest Common Factor</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Transform.html">-1.2. The Transformation Concept</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Transform.html#the-transformation-concept-integer-multiplication">-1.2.1. The Transformation Concept: Integer Multiplication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transform.html#polynomial-multiplication">-1.2.2. Polynomial Multiplication</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="FFT.html">-1.3. The Fast Fourier Transform</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="FFT.html#id1">-1.3.1. The Fast Fourier Transform</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="probabilistic-algorithms">
+<h1><span class="sectnum">Chapter 25 </span>Probabilistic Algorithms<a class="headerlink" href="#probabilistic-algorithms" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Probabilistic.html">-1.1. Introduction to Probabilistic Algorithms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Probabilistic.html#probabilistic-algorithms">-1.1.1. Probabilistic Algorithms</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Primes.html">-1.2. Finding Prime Numbers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="RandomNums.html">-1.3. Random Numbers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="RandomNums.html#id1">-1.3.1. Random Numbers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SkipList.html">-1.4. Skip Lists</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="SkipList.html#id1">-1.4.1. Skip Lists</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="search-structures">
+<h1><span class="sectnum">Chapter 26 </span>Search Structures<a class="headerlink" href="#search-structures" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="BalancedTree.html">-1.1. Balanced Trees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AVL.html">-1.2. The AVL Tree</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Splay.html">-1.3. The Splay Tree</a></li>
+<li class="toctree-l1"><a class="reference internal" href="RedBlack.html">-1.4. The Red-Black Tree</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="RedBlack.html#exercise-1">-1.4.1. Exercise 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RedBlack.html#exercise-2">-1.4.2. Exercise 2</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="miscellaneous">
+<h1><span class="sectnum">Chapter 27 </span>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Sparse.html">-1.1. The Sparse Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DynamicProgramming.html">-1.2. Dynamic Programming</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="DynamicProgramming.html#id1">-1.2.1. Dynamic Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DynamicProgramming.html#computing-fibonacci-numbers">-1.2.2. Computing Fibonacci Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DynamicProgramming.html#the-knapsack-problem">-1.2.3. The Knapsack Problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DynamicProgramming.html#chained-matrix-multiplication">-1.2.4. Chained Matrix Multiplication</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="AmortAnal.html">-1.3. Amortized Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Knapsack.html">-1.4. 0/1 Knapsack Problem</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Knapsack.html#id1">-1.4.1. 0/1 Knapsack Problem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Knapsack.html#exercise-1">-1.4.1.1. Exercise 1</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Knapsack.html#exercise-2">-1.4.2. Exercise 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Knapsack.html#exercise-3">-1.4.3. Exercise 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Knapsack.html#exercise-4">-1.4.4. Exercise 4</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="EditDistance.html">-1.5. Edit Distance</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="EditDistance.html#id1">-1.5.1. Edit Distance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EditDistance.html#exercise-1">-1.5.2. Exercise 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EditDistance.html#exercise-2">-1.5.3. Exercise 2</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="StringSearchKMP.html">-1.6. KMP String Search Algorithm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="StringSearchKMP.html#id1">-1.6.1. KMP String Search Algorithm</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="StringSearchBoyerMoore.html">-1.7. Boyer-Moore String Search Algorithm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="StringSearchBoyerMoore.html#id1">-1.7.1. Boyer-Moore String Search Algorithm</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="StringSearchRabinKarp.html">-1.8. Rabin-Karp String Search Algorithm [Draft]</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="StringSearchRabinKarp.html#id1">-1.8.1. Rabin-Karp String Search Algorithm [Draft]</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="GenTreeImplement.html">-1.9. General Tree Implementations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="GenTreeImplement.html#id1">-1.9.1. General Tree Implementations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="GenTreeImplement.html#introduction">-1.9.1.1. Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GenTreeImplement.html#list-of-children">-1.9.1.2. List of Children</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GenTreeImplement.html#the-left-child-right-sibling-implementation">-1.9.1.3. The Left-Child/Right-Sibling Implementation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GenTreeImplement.html#dynamic-node-implementations">-1.9.1.4. Dynamic Node Implementations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GenTreeImplement.html#dynamic-left-child-right-sibling-implementation">-1.9.1.5. Dynamic Left-Child/Right-Sibling Implementation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Kary.html">-1.10. K-ary Tree Implementations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Kary.html#id1">-1.10.1. K-ary Tree Implementations</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="limits-to-computing">
+<h1><span class="sectnum">Chapter 28 </span>Limits to Computing<a class="headerlink" href="#limits-to-computing" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="LimComp.html">-1.1. Limits to Computing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="LimComp.html#id1">-1.1.1. Limits to Computing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Reduction.html">-1.2. Reductions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Reduction.html#id1">-1.2.1. Reductions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Reduction.html#example-the-pairing-problem">-1.2.1.1. Example: The Pairing Problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Reduction.html#reduction-and-finding-a-lower-bound">-1.2.1.2. Reduction and Finding a Lower Bound</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Reduction.html#the-reduction-template">-1.2.1.3. The Reduction Template</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Reduction.html#two-multiplication-examples">-1.2.1.4. Two Multiplication Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Reduction.html#bounds-theorems">-1.2.1.5. Bounds Theorems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Reduction.html#the-cost-of-making-a-simple-polygon">-1.2.1.6. The Cost of Making a Simple Polygon</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="NPComplete.html">-1.3. NP-Completeness</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="NPComplete.html#id1">-1.3.1. NP-Completeness</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="NPComplete.html#hard-problems">-1.3.1.1. Hard Problems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="NPComplete.html#the-theory-of-np-completeness">-1.3.1.2. The Theory of NP-Completeness</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="circuitSAT.html">-1.4. Circuit Satisfiability</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="circuitSAT.html#id1">-1.4.1. Circuit Satisfiability</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SAT.html">-1.5. Formula Satisfiability</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="SAT.html#id1">-1.5.1. Formula Satisfiability</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="threeSAT.html">-1.6. 3-CNF Satisfiability</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="threeSAT.html#id1">-1.6.1. 3-CNF Satisfiability</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="clique.html">-1.7. The Clique Problem</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="clique.html#id1">-1.7.1. The Clique Problem</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="independentSet.html">-1.8. The Independent Set Problem</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="independentSet.html#independent-set">-1.8.1. Independent Set</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vertexCover.html">-1.9. The Vertex Cover Problem</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vertexCover.html#vertex-cover">-1.9.1. Vertex Cover</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hamiltonianCycle.html">-1.10. The Hamiltonian Cycle Problem</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hamiltonianCycle.html#hamiltonian-cycle">-1.10.1. Hamiltonian Cycle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="TSP.html">-1.11. The Traveling Salesman Problem</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="TSP.html#traveling-salesman">-1.11.1. Traveling Salesman</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="provingNPC.html">-1.12. NP-Completeness Proofs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="provingNPC.html#id1">-1.12.1. NP-Completeness Proofs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="circuitSAT_to_SAT.html">-1.13. Reduction of Circuit SAT to SAT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="circuitSAT_to_SAT.html#id1">-1.13.1. Reduction of Circuit SAT to SAT</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SAT_to_threeSAT.html">-1.14. Reduction of SAT to 3-SAT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="SAT_to_threeSAT.html#id1">-1.14.1. Reduction of SAT to 3-SAT</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="threeSAT_to_clique.html">-1.15. Reduction of 3-SAT to Clique</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="threeSAT_to_clique.html#id1">-1.15.1. Reduction of 3-SAT to Clique</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="clique_to_independentSet.html">-1.16. Reduction of Clique to Independent Set</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="clique_to_independentSet.html#clique-to-independent-set">-1.16.1. Clique to Independent Set</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="independentSet_to_vertexCover.html">-1.17. Reduction of Independent Set to Vertex Cover</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="independentSet_to_vertexCover.html#independent-set-to-vertex-cover">-1.17.1. Independent Set to Vertex Cover</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="threeSAT_to_hamiltonianCycle.html">-1.18. Reduction of 3-SAT to Hamiltonian Cycle</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="threeSAT_to_hamiltonianCycle.html#sat-to-hamiltonian-cycle">-1.18.1. 3-SAT to Hamiltonian Cycle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hamiltonianCycle_to_TSP.html">-1.19. Reduction of Hamiltonian Cycle to Traveling Salesman</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hamiltonianCycle_to_TSP.html#hamiltonian-cycle-to-traveling-salesman">-1.19.1. Hamiltonian Cycle to Traveling Salesman</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="NPCoping.html">-1.20. Coping with NP-Complete Problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Impossible.html">-1.21. Unsolveable Problems</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Impossible.html#id1">-1.21.1. Unsolveable Problems</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Impossible.html#introduction">-1.21.1.1. Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Impossible.html#uncountability">-1.21.1.2. Uncountability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Impossible.html#the-halting-problem-is-unsolvable">-1.21.1.3. The Halting Problem Is Unsolvable</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Turing.html">-1.22. Turing Machines</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Turing.html#id1">-1.22.1. Turing Machines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Turing.html#a-general-model-of-computation">-1.22.1.1. A General Model of Computation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Turing.html#interpreting-turing-machines">-1.22.1.2. Interpreting Turing Machines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Turing.html#turing-decideable-vs-turing-acceptable-languages">-1.22.1.3. Turing-Decideable vs. Turing-Acceptable Languages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Turing.html#making-more-complicated-machines">-1.22.1.4. Making More Complicated Machines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Turing.html#turing-machine-extensions">-1.22.1.5. Turing Machine Extensions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="appendix">
+<h1><span class="sectnum">Chapter 29 </span>Appendix<a class="headerlink" href="#appendix" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Glossary.html">-1.1. Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Bibliography.html">-1.2. Bibliography</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ToDo.html">TODO List</a></li>
+</ul>
+</div>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+      </div>
+      <div class="bottomnav">
+      <p><span class="email_div" style="display:inline;"><a id="contact_us" class="contact" style="float:left;color:blue;" rel="nofollow" href="mailto:">Contact Us |</a><a style="float:left;color:blue;" rel="nofollow" href="../../../lib/Privacy.html" target="_blank">| Privacy |</a> <a style="float:left;color:blue;" rel="nofollow" href="../../../lib/license.html" target="_blank">| License</a></span>&#160;&#160;
+      
+        <a  class="uplink" href="#">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a  id="nextmod1" href="Intro.html">0.<span class="section-number">1. </span>How to Use this System</a>&#160;&#160;»
+
+</p>
+      </div>
+      <img style="float:right;" src="_static/nsf1.gif" height="62" width="62" alt=""/>
+
+
+    <div class="footer">
+      <p>
+        <span class="email_div" style="display:inline;">
+          <a id="contact_us" class="contact" style="float:left;color:blue;" rel="nofollow" href="mailto:">Contact Us |</a>
+          <a id="bugreport-link" style="float:left;color:blue;" class="bugreport-link" href="#">| Report a bug</a>
+        </span>
+      </p>
+        &copy; Copyright 2011-2023 by OpenDSA Project Contributors and distributed under an MIT license.
+      Last updated on Oct 16, 2024.
+      Created using <a target="_blank" href="http://sphinx.pocoo.org/">Sphinx</a> 5.2.1.
+    </div>
+    
+<div id="bugreport-box" class="bugreport-popup ">
+  <a href="#" class="close"><img src="_static/Images/close_pop.png" class="btn_close" title="Close Window" alt="Close Window" /></a>
+  <form method="post" class="report" action="https://#">
+    <fieldset class="textbox">
+      <div id="bug_error" class="error"></div>
+      <label>
+        <span>Summary*:</span>
+        <input type="text" id="b_title" placeholder="Summary" />
+      </label>
+
+      <label class="os">
+        <span>Operating system*:</span>
+        <select id="b_os">
+          <option value="windows">Windows</option>
+          <option value="macos">Mac OS</option>
+          <option value="linux">Linux</option>
+          <option value="ios">iOS</option>
+          <option value="android">Android</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+
+      <label class="browser">
+        <span>Browser*:</span>
+        <select id="b_browser">
+          <option value="chrome">Chrome</option>
+          <option value="safari">Safari</option>
+          <option value="internetexplorer">Internet Explorer</option>
+          <option value="opera">Opera</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+
+      <label class="description">
+        <span>Description*:</span><br>
+        <textarea id="b_description" rows="5" cols="25" placeholder="***BUG** Please enter: (1) a consice description of the problem. (2) steps to reproduce bug. (3) the version of your browser and operating system."></textarea>
+      </label>
+
+      <label class="screenshot">
+        <span>Attach a screenshot (optional):</span>
+        <input type="file" id="b_screenshot" accept="image/*" placeholder="Attach a screenshot (optional)">
+      </label>
+
+      <p>
+        <input type="submit" id="bug-submit-button" value="Submit &rarr;"/>
+      </p>
+    </fieldset>
+  </form>
+</div>
+
+  </body>
+</html>

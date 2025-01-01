@@ -421,7 +421,10 @@
           "System.Data.DataSetExtensions": "4.6.0-preview3.19128.7"
         },
         "runtime": {
-          "banluu.dll": {}
+          "banluu.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "0.0.0.0"
+          }
         }
       },
       "Project/1.0.0": {
@@ -432,12 +435,18 @@
           "System.Drawing.Common": "9.0.0"
         },
         "runtime": {
-          "Project.dll": {}
+          "Project.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "0.0.0.0"
+          }
         }
       },
       "Project - Review RBT/1.0.0": {
         "runtime": {
-          "Project - Review RBT.dll": {}
+          "Project - Review RBT.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Microsoft.Web.WebView2.Core/1.0.2903.40": {
