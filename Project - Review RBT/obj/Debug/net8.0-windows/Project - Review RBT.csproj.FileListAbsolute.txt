@@ -1,0 +1,34 @@
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\bin\Debug\net8.0-windows\Project - Review RBT.exe
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\bin\Debug\net8.0-windows\Project - Review RBT.deps.json
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\bin\Debug\net8.0-windows\Project - Review RBT.runtimeconfig.json
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\bin\Debug\net8.0-windows\Project - Review RBT.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\bin\Debug\net8.0-windows\Project - Review RBT.pdb
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project___Review_RBT.RedBlackForm.resources
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.csproj.GenerateResource.cache
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.GeneratedMSBuildEditorConfig.editorconfig
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.AssemblyInfoInputs.cache
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.AssemblyInfo.cs
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.csproj.CoreCompileInputs.cache
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.sourcelink.json
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\refint\Project - Review RBT.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.pdb
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.genruntimeconfig.cache
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\ref\Project - Review RBT.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\bin\Debug\net8.0-windows\Project - Review RBT.exe
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\bin\Debug\net8.0-windows\Project - Review RBT.deps.json
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\bin\Debug\net8.0-windows\Project - Review RBT.runtimeconfig.json
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\bin\Debug\net8.0-windows\Project - Review RBT.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\bin\Debug\net8.0-windows\Project - Review RBT.pdb
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project___Review_RBT.RedBlackForm.resources
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.csproj.GenerateResource.cache
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.AssemblyInfoInputs.cache
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.AssemblyInfo.cs
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.csproj.CoreCompileInputs.cache
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.sourcelink.json
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\refint\Project - Review RBT.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.pdb
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.genruntimeconfig.cache
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\ref\Project - Review RBT.dll

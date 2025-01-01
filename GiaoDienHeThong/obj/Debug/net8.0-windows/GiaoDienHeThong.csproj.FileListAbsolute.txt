@@ -1,0 +1,186 @@
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.csproj.AssemblyReference.cache
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.BaiTap.resources
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.CauTrucDuLieu.resources
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.DangKy.resources
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.DangNhap.resources
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.KienThuc.resources
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.QuenMatKhau.resources
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.User.resources
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.csproj.GenerateResource.cache
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.GeneratedMSBuildEditorConfig.editorconfig
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.AssemblyInfoInputs.cache
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.AssemblyInfo.cs
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.csproj.CoreCompileInputs.cache
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.sourcelink.json
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project.deps.json
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project.runtimeconfig.json
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project.exe
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\banluu.deps.json
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\banluu.runtimeconfig.json
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\banluu.exe
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project - Review RBT.deps.json
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project - Review RBT.runtimeconfig.json
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project - Review RBT.exe
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\GiaoDienHeThong.exe
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\GiaoDienHeThong.deps.json
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\GiaoDienHeThong.runtimeconfig.json
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\GiaoDienHeThong.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\GiaoDienHeThong.pdb
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Azure.Core.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Azure.Identity.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Win32.SystemEvents.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\QuickGraph.Data.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\QuickGraph.Graphviz.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\QuickGraph.Serialization.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\QuickGraph.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\System.ClientModel.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\System.Drawing.Common.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\System.Private.Windows.Core.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\System.Memory.Data.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\banluu.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project - Review RBT.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project.pdb
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project.dll.config
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\banluu.pdb
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\banluu.dll.config
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project - Review RBT.pdb
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.xml
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.xml
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.xml
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDien.BCB25CC2.Up2Date
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\refint\GiaoDienHeThong.dll
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.pdb
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.genruntimeconfig.cache
+D:\ĐỒ ÁN CUỐI KỲ IT008\Do-An-Cuoi-Ky-IT008\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\ref\GiaoDienHeThong.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\refint\GiaoDienHeThong.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.pdb
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project.deps.json
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project.runtimeconfig.json
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project.exe
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\banluu.deps.json
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\banluu.runtimeconfig.json
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\banluu.exe
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project - Review RBT.deps.json
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project - Review RBT.runtimeconfig.json
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project - Review RBT.exe
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\GiaoDienHeThong.exe
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\GiaoDienHeThong.deps.json
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\GiaoDienHeThong.runtimeconfig.json
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\GiaoDienHeThong.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\GiaoDienHeThong.pdb
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\QuickGraph.Data.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\QuickGraph.Graphviz.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\QuickGraph.Serialization.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\QuickGraph.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\System.Drawing.Common.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\System.Private.Windows.Core.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\banluu.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project - Review RBT.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project.dll
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project.pdb
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project.dll.config
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\banluu.pdb
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\banluu.dll.config
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Project - Review RBT.pdb
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.xml
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.xml
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.xml
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.csproj.AssemblyReference.cache
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.BaiTap.resources
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.CauTrucDuLieu.resources
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.DangKy.resources
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.DangNhap.resources
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.KienThuc.resources
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.QuenMatKhau.resources
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.User.resources
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.csproj.GenerateResource.cache
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.AssemblyInfoInputs.cache
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.AssemblyInfo.cs
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.csproj.CoreCompileInputs.cache
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.sourcelink.json
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDien.BCB25CC2.Up2Date
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\GiaoDienHeThong.genruntimeconfig.cache
+C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\obj\Debug\net8.0-windows\ref\GiaoDienHeThong.dll

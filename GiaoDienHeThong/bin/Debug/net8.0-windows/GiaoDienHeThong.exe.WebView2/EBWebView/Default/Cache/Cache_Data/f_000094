@@ -1,0 +1,1159 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.900
+Hello everyone. Welcome to this video in this video. I'll be learning
+
+00:00:02.900 --> 00:00:04.800
+about graphs what graphs actually
+
+00:00:04.800 --> 00:00:06.700
+are as a data structure. We learn how to
+
+00:00:06.700 --> 00:00:08.400
+implement graphs and coding language
+
+00:00:08.400 --> 00:00:10.800
+and then we'll see how we can perform some basic
+
+00:00:10.800 --> 00:00:12.900
+traverses on a graph and by the end of
+
+00:00:12.900 --> 00:00:14.900
+this video you'll have a clear vision and you will
+
+00:00:14.900 --> 00:00:16.900
+be able to create your own drafts in
+
+00:00:16.900 --> 00:00:18.900
+1 program language and you'll be able to perform
+
+00:00:18.900 --> 00:00:20.500
+basic traversals algorithm in it.
+
+00:00:20.500 --> 00:00:22.900
+So if you have to Define graph, we can say that
+
+00:00:22.900 --> 00:00:24.900
+graph is a combination of nodes and edges
+
+00:00:24.900 --> 00:00:26.400
+if we have to Define notes
+
+00:00:26.400 --> 00:00:28.800
+notes can be thought of abstractly as
+
+00:00:28.800 --> 00:00:30.900
+a circuit with some data
+
+00:00:30.900 --> 00:00:31.300
+inside it.
+
+00:00:32.000 --> 00:00:34.700
+So if we have all these nodes here we can
+
+00:00:34.700 --> 00:00:36.800
+say these are bunch of nodes. That means
+
+00:00:36.800 --> 00:00:38.900
+we have all these circles
+
+00:00:38.900 --> 00:00:40.100
+with some data inside it
+
+00:00:40.100 --> 00:00:41.900
+now talking about the edges
+
+00:00:41.900 --> 00:00:43.900
+assume if we connect these
+
+00:00:43.900 --> 00:00:45.900
+2 nodes. Let's connect a and
+
+00:00:45.900 --> 00:00:46.000
+b
+
+00:00:46.600 --> 00:00:48.600
+When A and B have a connection
+
+00:00:48.600 --> 00:00:50.800
+we can say that A and B have a
+
+00:00:50.800 --> 00:00:52.900
+have an edge so we can say
+
+00:00:52.900 --> 00:00:54.900
+an edge is basically a connection
+
+00:00:54.900 --> 00:00:56.900
+between 2 nodes if you put some
+
+00:00:56.900 --> 00:00:58.700
+random edges in between all these
+
+00:00:58.700 --> 00:01:00.900
+nodes we form a graph this
+
+00:01:00.900 --> 00:01:02.900
+is a visual representation of how
+
+00:01:02.900 --> 00:01:03.800
+a graph looks.
+
+00:01:04.600 --> 00:01:06.900
+If we think of nodes as simply
+
+00:01:06.900 --> 00:01:08.700
+some things and the edges
+
+00:01:08.700 --> 00:01:10.800
+as relations between them we
+
+00:01:10.800 --> 00:01:12.500
+can say that these
+
+00:01:12.500 --> 00:01:14.900
+all the things are related in some manner.
+
+00:01:15.500 --> 00:01:17.400
+And this is why and this is how
+
+00:01:17.400 --> 00:01:19.600
+we solve some real world problems
+
+00:01:19.600 --> 00:01:21.800
+using graphs. If you have to take
+
+00:01:21.800 --> 00:01:23.800
+them an example, we can say that these
+
+00:01:23.800 --> 00:01:25.500
+nodes are basically some cities
+
+00:01:25.500 --> 00:01:27.800
+and these edges are connection of
+
+00:01:27.800 --> 00:01:28.700
+roads between them.
+
+00:01:29.500 --> 00:01:31.800
+This is how we can think of implementing
+
+00:01:31.800 --> 00:01:33.900
+some of the very popular algorithms of
+
+00:01:33.900 --> 00:01:35.000
+finding shortest paths.
+
+00:01:35.700 --> 00:01:37.800
+Let's talk about how we can travel in between
+
+00:01:37.800 --> 00:01:39.500
+these notes. Assume
+
+00:01:39.500 --> 00:01:40.700
+you are standing at a
+
+00:01:41.600 --> 00:01:43.600
+Then a has 2 options
+
+00:01:43.600 --> 00:01:45.900
+it can either go to b or it can go
+
+00:01:45.900 --> 00:01:47.800
+to D. Alright, let's take a
+
+00:01:47.800 --> 00:01:49.800
+step towards D. Once we are here
+
+00:01:49.800 --> 00:01:51.700
+at D. We still have 2
+
+00:01:51.700 --> 00:01:53.600
+options we can either go to e
+
+00:01:53.600 --> 00:01:55.900
+or we can go to G. Let's go to
+
+00:01:55.900 --> 00:01:57.900
+E. Now when we are standing at
+
+00:01:57.900 --> 00:01:59.700
+e you can notice 1 Thing e
+
+00:01:59.700 --> 00:02:01.900
+only has 1 part to go. That's your
+
+00:02:01.900 --> 00:02:03.800
+C. Right, but what if we want to go
+
+00:02:03.800 --> 00:02:05.800
+back to D. Is it possible? No
+
+00:02:05.800 --> 00:02:07.900
+particularly in this graph. We
+
+00:02:07.900 --> 00:02:09.800
+don't have any option to go back
+
+00:02:09.800 --> 00:02:11.800
+to the node via coming from because
+
+00:02:11.800 --> 00:02:13.400
+this is a directional graph.
+
+00:02:13.400 --> 00:02:15.700
+All right on the contrary
+
+00:02:15.700 --> 00:02:17.900
+if we see this graph, this is
+
+00:02:17.900 --> 00:02:19.700
+an UND directional graph. What
+
+00:02:19.700 --> 00:02:21.500
+is the difference? This does not have
+
+00:02:21.500 --> 00:02:23.200
+arrowheads. That means
+
+00:02:23.200 --> 00:02:25.800
+we can even travel back directly to the
+
+00:02:25.800 --> 00:02:27.400
+node which we have traveled from.
+
+00:02:27.400 --> 00:02:29.800
+So assuming in this directional graph
+
+00:02:29.800 --> 00:02:31.300
+if we are standing at e
+
+00:02:31.300 --> 00:02:33.700
+we would be able to travel back to d as well
+
+00:02:33.700 --> 00:02:35.900
+and again then back to a
+
+00:02:36.800 --> 00:02:38.900
+This is merely a visual representation of
+
+00:02:38.900 --> 00:02:40.700
+a graph graph in
+
+00:02:40.700 --> 00:02:42.800
+coding language is going to be a little different
+
+00:02:42.800 --> 00:02:44.800
+if we have to represent that in
+
+00:02:44.800 --> 00:02:46.800
+any of the programming language, we'd be using
+
+00:02:46.800 --> 00:02:48.800
+a data structure and most often we use
+
+00:02:48.800 --> 00:02:50.700
+a data structure called as a hashmap.
+
+00:02:50.700 --> 00:02:52.800
+We'd be using python as a language for
+
+00:02:52.800 --> 00:02:54.500
+this video in Python. We
+
+00:02:54.500 --> 00:02:56.500
+Implement hashmaps using dictionaries
+
+00:02:56.500 --> 00:02:58.600
+and these are basically key value
+
+00:02:58.600 --> 00:02:59.000
+pairs.
+
+00:02:59.800 --> 00:03:01.800
+and if you talk about drafts, what we are going to
+
+00:03:01.800 --> 00:03:02.200
+do is
+
+00:03:03.100 --> 00:03:05.700
+we will have a dictionary which have keys and
+
+00:03:05.700 --> 00:03:07.700
+the notes and the value
+
+00:03:07.700 --> 00:03:09.900
+corresponding to every of the key is going to
+
+00:03:09.900 --> 00:03:11.900
+be all the connection. It has with
+
+00:03:11.900 --> 00:03:13.500
+other nodes. So this
+
+00:03:13.500 --> 00:03:15.500
+format that you can see is actually
+
+00:03:15.500 --> 00:03:17.600
+called as an agency list.
+
+00:03:17.600 --> 00:03:19.800
+Now, as you know, how a
+
+00:03:19.800 --> 00:03:21.500
+graph looks like in a programming language.
+
+00:03:21.500 --> 00:03:23.000
+We should also
+
+00:03:23.000 --> 00:03:25.900
+know some of the very Basics algorithms that we
+
+00:03:25.900 --> 00:03:27.800
+can use in these graphs for me
+
+00:03:27.800 --> 00:03:29.900
+and in general the very basic
+
+00:03:29.900 --> 00:03:31.900
+algorithms that 1 must know when
+
+00:03:31.900 --> 00:03:33.600
+beginning with graphs there are 2
+
+00:03:33.600 --> 00:03:35.800
+traversal algorithms for a graphs. The first
+
+00:03:35.800 --> 00:03:37.700
+1 is DFS and the other 1 is
+
+00:03:37.700 --> 00:03:39.400
+BFS. Let's talk about
+
+00:03:39.400 --> 00:03:41.600
+DFS first. Well DFS
+
+00:03:41.600 --> 00:03:43.900
+stands for depth first search. Let's
+
+00:03:43.900 --> 00:03:45.800
+perform DFS directly onto a
+
+00:03:45.800 --> 00:03:47.800
+graph you can start traversing the
+
+00:03:47.800 --> 00:03:49.700
+graph from any of the node. Well
+
+00:03:49.700 --> 00:03:51.900
+the node you start with will be called as a
+
+00:03:51.900 --> 00:03:53.500
+source node. Let's take a
+
+00:03:53.500 --> 00:03:55.900
+as a source node. Now when we are talking about
+
+00:03:55.900 --> 00:03:57.800
+depth first search what we
+
+00:03:57.800 --> 00:03:59.700
+mean is we go
+
+00:03:59.700 --> 00:04:01.600
+in 1 single Direction and we don't
+
+00:04:01.600 --> 00:04:02.700
+get diverted.
+
+00:04:03.000 --> 00:04:05.900
+Until we have no other option. So when we are
+
+00:04:05.900 --> 00:04:07.200
+at a we have
+
+00:04:07.200 --> 00:04:09.700
+1 choice to make between B and D.
+
+00:04:10.300 --> 00:04:12.800
+Let's go to D when we are standing at d.
+
+00:04:13.700 --> 00:04:15.900
+We again have 2 choices. Let's go to G
+
+00:04:15.900 --> 00:04:17.900
+this time. So once we add G,
+
+00:04:17.900 --> 00:04:19.900
+we only have 1 choice we are going to go to F
+
+00:04:19.900 --> 00:04:21.900
+now. Do we have any other choice?
+
+00:04:21.900 --> 00:04:23.800
+So we will track back to
+
+00:04:23.800 --> 00:04:25.700
+G. All the other nodes of G
+
+00:04:25.700 --> 00:04:27.600
+are exhausted. We will go to
+
+00:04:27.600 --> 00:04:29.800
+D now. Well D still have
+
+00:04:29.800 --> 00:04:31.400
+1 path that was not traveled.
+
+00:04:31.400 --> 00:04:33.100
+So we will take up that path.
+
+00:04:33.100 --> 00:04:35.900
+We will move to e and after e
+
+00:04:35.900 --> 00:04:37.800
+we will move to C again
+
+00:04:37.800 --> 00:04:39.800
+we are left with no other option. We will
+
+00:04:39.800 --> 00:04:40.800
+track back to E.
+
+00:04:41.500 --> 00:04:43.900
+We will see that e does not have any other part
+
+00:04:43.900 --> 00:04:45.900
+to go. We will again track back to D
+
+00:04:45.900 --> 00:04:47.900
+this time all the parts
+
+00:04:47.900 --> 00:04:49.900
+of D are also exhausted. We will track
+
+00:04:49.900 --> 00:04:51.900
+back to a is still have 1
+
+00:04:51.900 --> 00:04:53.900
+path to go. That is B now.
+
+00:04:53.900 --> 00:04:55.900
+We will go to B. This is how we perform
+
+00:04:55.900 --> 00:04:57.700
+a DFS traversal. Now,
+
+00:04:57.700 --> 00:04:59.700
+let's quickly take a look at BFS.
+
+00:04:59.700 --> 00:05:01.600
+Now, let's quickly take a look at
+
+00:05:01.600 --> 00:05:03.900
+BFS traversal BFS
+
+00:05:03.900 --> 00:05:05.900
+stands for breadth first search.
+
+00:05:06.500 --> 00:05:08.700
+Now in breadth first search what we actually do is
+
+00:05:08.700 --> 00:05:10.600
+when we stand on a node
+
+00:05:10.600 --> 00:05:12.900
+we travel all of its neighbor
+
+00:05:12.900 --> 00:05:14.900
+then we go to each of
+
+00:05:14.900 --> 00:05:16.600
+its neighbor and we
+
+00:05:16.600 --> 00:05:18.900
+travel on to further of the
+
+00:05:18.900 --> 00:05:20.800
+nodes neighbor. Let's do
+
+00:05:20.800 --> 00:05:22.800
+that in this graph. Assuming
+
+00:05:22.800 --> 00:05:24.500
+we are standing at a again.
+
+00:05:25.300 --> 00:05:27.900
+The first thing we do is go to 1 of
+
+00:05:27.900 --> 00:05:29.800
+its neighbor. Let's go to D again.
+
+00:05:29.800 --> 00:05:31.900
+All right, once you are at D
+
+00:05:31.900 --> 00:05:33.600
+you have more
+
+00:05:33.600 --> 00:05:35.800
+parts to go to but because we are
+
+00:05:35.800 --> 00:05:37.900
+traveling in a BFS manner, we
+
+00:05:37.900 --> 00:05:39.700
+will first explore all the other
+
+00:05:39.700 --> 00:05:41.800
+neighbors of a as well, that means
+
+00:05:41.800 --> 00:05:43.800
+the next option is going to be
+
+00:05:43.800 --> 00:05:45.700
+B now once all the
+
+00:05:45.700 --> 00:05:47.800
+options of our exhausted. We are going to take
+
+00:05:47.800 --> 00:05:49.900
+up 1 of its neighbor and
+
+00:05:49.900 --> 00:05:51.800
+then we will travel that as well. So
+
+00:05:51.800 --> 00:05:53.700
+assume now we know that
+
+00:05:53.700 --> 00:05:55.700
+D has neighbors are going to travel
+
+00:05:55.700 --> 00:05:56.800
+all the neighborhoods of d
+
+00:05:57.500 --> 00:05:59.700
+We have e and we have G.
+
+00:06:00.400 --> 00:06:02.800
+Now all the neighbors of grx hosted
+
+00:06:02.800 --> 00:06:04.700
+we will take up 1 of its neighbor.
+
+00:06:04.700 --> 00:06:06.600
+We will take e we will travel
+
+00:06:06.600 --> 00:06:08.800
+C then then we will see does
+
+00:06:08.800 --> 00:06:10.900
+e have any other neighbor know all of
+
+00:06:10.900 --> 00:06:12.900
+the neighbors of e are exhausted.
+
+00:06:13.500 --> 00:06:15.900
+Then we will go to G. We will see
+
+00:06:15.900 --> 00:06:17.900
+all of its neighbor. We will
+
+00:06:17.900 --> 00:06:19.900
+go to F right and then we will
+
+00:06:19.900 --> 00:06:21.800
+see if all the neighbors of
+
+00:06:21.800 --> 00:06:23.900
+gr. Exhausted. Yes, all the
+
+00:06:23.900 --> 00:06:25.500
+neighbors of Dr. Exhausted. Yes,
+
+00:06:25.500 --> 00:06:27.900
+and all the neighbors of a are also
+
+00:06:27.900 --> 00:06:29.700
+exhausted that means we have completed our
+
+00:06:29.700 --> 00:06:31.800
+BFS travel. So like this 1
+
+00:06:31.800 --> 00:06:32.900
+point that you must know is
+
+00:06:32.900 --> 00:06:34.500
+there could be various
+
+00:06:34.500 --> 00:06:36.900
+possible ways of traveling a graph
+
+00:06:37.700 --> 00:06:39.900
+When you're performing a DFS, it might
+
+00:06:39.900 --> 00:06:41.600
+result in different traversals
+
+00:06:41.600 --> 00:06:43.800
+similarly with BFS. If you are
+
+00:06:43.800 --> 00:06:45.600
+traveling in BFS manner, there could be
+
+00:06:45.600 --> 00:06:47.700
+various possible ways for traversing a graph.
+
+00:06:48.400 --> 00:06:50.800
+That depends on each and every choice you make
+
+00:06:50.800 --> 00:06:52.700
+during the traversal now
+
+00:06:52.700 --> 00:06:54.800
+that we know both of the traversals. What
+
+00:06:54.800 --> 00:06:56.900
+is actually the difference between them.
+
+00:06:56.900 --> 00:06:58.700
+Well, if we talk about the
+
+00:06:58.700 --> 00:06:59.600
+implementation details
+
+00:06:59.600 --> 00:07:01.900
+DFS uses a
+
+00:07:01.900 --> 00:07:03.500
+data structure called as a stack
+
+00:07:03.500 --> 00:07:05.700
+and on the other hand BFS uses
+
+00:07:05.700 --> 00:07:07.300
+a data structure called as Q.
+
+00:07:08.100 --> 00:07:10.700
+Let's quickly see the implementation of both using the
+
+00:07:10.700 --> 00:07:11.800
+respective data structures.
+
+00:07:13.200 --> 00:07:14.200
+first DFS
+
+00:07:15.100 --> 00:07:16.500
+DFS uses a stack
+
+00:07:17.100 --> 00:07:19.900
+You can assume a stack as a vertical data structure where
+
+00:07:19.900 --> 00:07:21.600
+you can access only the element
+
+00:07:21.600 --> 00:07:22.200
+at the top.
+
+00:07:22.900 --> 00:07:23.400
+like this
+
+00:07:24.300 --> 00:07:26.800
+initially we put on the source node
+
+00:07:26.800 --> 00:07:28.500
+inside the stack again
+
+00:07:28.500 --> 00:07:30.900
+considering a as the source node. The
+
+00:07:30.900 --> 00:07:31.600
+stack looks like this.
+
+00:07:33.000 --> 00:07:35.200
+There is going to be only 2 operations.
+
+00:07:36.200 --> 00:07:38.900
+Popping the element at the top and then adding all
+
+00:07:38.900 --> 00:07:40.600
+of its neighbor inside the stack.
+
+00:07:41.700 --> 00:07:42.800
+So when we perform it here.
+
+00:07:43.800 --> 00:07:45.900
+We pop a that means now
+
+00:07:45.900 --> 00:07:47.900
+a is traversed and the
+
+00:07:47.900 --> 00:07:49.800
+next thing we do is we put on all the
+
+00:07:49.800 --> 00:07:51.900
+neighbors of a inside the stack
+
+00:07:51.900 --> 00:07:53.900
+this time. We put B
+
+00:07:53.900 --> 00:07:55.700
+and then D inside
+
+00:07:55.700 --> 00:07:57.800
+the stack first step is done.
+
+00:07:58.900 --> 00:07:59.900
+now in the second
+
+00:08:00.600 --> 00:08:01.900
+at the top we have d
+
+00:08:02.500 --> 00:08:04.000
+we will pop out d
+
+00:08:05.000 --> 00:08:07.800
+After popping that means D is
+
+00:08:07.800 --> 00:08:09.900
+traversed we have to put on all the
+
+00:08:09.900 --> 00:08:11.800
+neighbors of D inside the stack
+
+00:08:11.800 --> 00:08:13.500
+we can put e
+
+00:08:13.500 --> 00:08:15.900
+and G inside it now
+
+00:08:15.900 --> 00:08:17.300
+at the top we have G
+
+00:08:17.300 --> 00:08:19.800
+we will pop G that means
+
+00:08:19.800 --> 00:08:21.900
+G is traversed and then
+
+00:08:21.900 --> 00:08:23.600
+we will put on
+
+00:08:23.600 --> 00:08:25.700
+the neighbor of G.
+
+00:08:25.700 --> 00:08:27.800
+That means we have F
+
+00:08:27.800 --> 00:08:29.800
+now again at the top we have
+
+00:08:29.800 --> 00:08:31.500
+F we will pop F
+
+00:08:31.500 --> 00:08:33.700
+that means f is traversed.
+
+00:08:33.700 --> 00:08:35.600
+F does not have any neighbor.
+
+00:08:35.600 --> 00:08:37.800
+That means at the top we
+
+00:08:37.800 --> 00:08:38.600
+have e now
+
+00:08:39.100 --> 00:08:41.700
+We pop e that means e is
+
+00:08:41.700 --> 00:08:42.100
+traversed.
+
+00:08:42.700 --> 00:08:44.900
+And we put in the neighbors
+
+00:08:44.900 --> 00:08:46.800
+of e that means we put
+
+00:08:46.800 --> 00:08:47.500
+C now.
+
+00:08:48.200 --> 00:08:50.600
+Once C is popped. That means C
+
+00:08:50.600 --> 00:08:52.800
+is traversed C does not have
+
+00:08:52.800 --> 00:08:54.400
+any neighbor to put in the stack.
+
+00:08:55.200 --> 00:08:57.800
+As we can see the at the top we have
+
+00:08:57.800 --> 00:08:59.800
+B now the
+
+00:08:59.800 --> 00:09:01.900
+pop out B and we Traverse b
+
+00:09:01.900 --> 00:09:03.900
+as well, B does not have
+
+00:09:03.900 --> 00:09:05.700
+any neighbors and the
+
+00:09:05.700 --> 00:09:07.900
+stack is now empty. That means the
+
+00:09:07.900 --> 00:09:08.800
+traversal is done.
+
+00:09:09.700 --> 00:09:11.600
+Now coming to PFS and
+
+00:09:11.600 --> 00:09:13.900
+BFS. We use Q you can think
+
+00:09:13.900 --> 00:09:15.800
+of Q as a horizontal data structure
+
+00:09:15.800 --> 00:09:17.800
+in which we can insert the
+
+00:09:17.800 --> 00:09:19.900
+elements from the rear end. And we delete
+
+00:09:19.900 --> 00:09:21.100
+the elements from the front end.
+
+00:09:21.900 --> 00:09:23.300
+Initially again
+
+00:09:23.300 --> 00:09:25.500
+in q v button Source.
+
+00:09:25.500 --> 00:09:27.900
+The operations are going to remain same
+
+00:09:27.900 --> 00:09:29.800
+just the data structure is
+
+00:09:29.800 --> 00:09:31.900
+different. That means we are going to
+
+00:09:31.900 --> 00:09:33.800
+pop the element from the front side.
+
+00:09:34.500 --> 00:09:36.900
+And then we will put in the neighbors
+
+00:09:36.900 --> 00:09:37.800
+of it from the rear end.
+
+00:09:38.800 --> 00:09:40.500
+So we have a inside a q.
+
+00:09:41.400 --> 00:09:42.200
+we will pop a
+
+00:09:44.000 --> 00:09:45.800
+that means a is traversed.
+
+00:09:46.500 --> 00:09:48.800
+We will put inside the neighbors of a
+
+00:09:48.800 --> 00:09:50.700
+that means B and D.
+
+00:09:50.700 --> 00:09:52.600
+Now this time we have B
+
+00:09:52.600 --> 00:09:54.100
+we pop out B.
+
+00:09:55.200 --> 00:09:57.800
+B is travels now we put in the
+
+00:09:57.800 --> 00:09:58.400
+neighbors of B.
+
+00:09:59.200 --> 00:10:01.400
+We do not have any neighbors of B. That means
+
+00:10:01.400 --> 00:10:02.600
+we are going to proceed.
+
+00:10:03.900 --> 00:10:05.900
+Now we have D. We pop
+
+00:10:05.900 --> 00:10:06.500
+out d
+
+00:10:07.300 --> 00:10:09.800
+That means D is traversed we put in
+
+00:10:09.800 --> 00:10:11.000
+the neighbors of d.
+
+00:10:12.300 --> 00:10:14.100
+That means e and G.
+
+00:10:14.800 --> 00:10:15.800
+now we have e
+
+00:10:16.500 --> 00:10:18.700
+At the front end we are going to delete
+
+00:10:18.700 --> 00:10:20.600
+e that means we are going to pop e
+
+00:10:20.600 --> 00:10:22.300
+and e is traversed.
+
+00:10:22.900 --> 00:10:24.700
+We put in the neighbors of E.
+
+00:10:25.600 --> 00:10:27.200
+That means we put in C.
+
+00:10:28.900 --> 00:10:29.700
+Now we have G.
+
+00:10:30.700 --> 00:10:31.600
+We pop G.
+
+00:10:32.900 --> 00:10:34.800
+And G is traversed and we
+
+00:10:34.800 --> 00:10:36.900
+put in the neighbors of G. That means f
+
+00:10:38.700 --> 00:10:39.600
+Now we have C.
+
+00:10:40.400 --> 00:10:41.300
+We popped C.
+
+00:10:42.000 --> 00:10:44.100
+And now we have Traverse c as well,
+
+00:10:44.100 --> 00:10:46.500
+the last left inside
+
+00:10:46.500 --> 00:10:48.600
+the queue is f
+
+00:10:48.600 --> 00:10:50.800
+we pop f f
+
+00:10:50.800 --> 00:10:52.700
+is traversed. F does not have any
+
+00:10:52.700 --> 00:10:54.500
+further neighbors and the
+
+00:10:54.500 --> 00:10:56.800
+queue becomes empty. That means this is the
+
+00:10:56.800 --> 00:10:58.700
+end point of the algorithm and the
+
+00:10:58.700 --> 00:11:00.000
+BFS is done.
+
+00:11:01.300 --> 00:11:03.900
+Now let's quickly see the coding implementation of
+
+00:11:03.900 --> 00:11:05.900
+these 2 algorithms here. We have
+
+00:11:05.900 --> 00:11:07.900
+created the same graph that we have seen now.
+
+00:11:07.900 --> 00:11:09.400
+Let's code a DFS function for it.
+
+00:11:13.000 --> 00:11:15.900
+So what are the 2 things we need for a DFS to work? The
+
+00:11:15.900 --> 00:11:17.300
+first thing is the graph itself.
+
+00:11:18.900 --> 00:11:20.100
+And then we need source.
+
+00:11:27.000 --> 00:11:29.700
+We use a stack in a data, uh in a DFS function,
+
+00:11:29.700 --> 00:11:31.700
+so I'm going to initialize a stack.
+
+00:11:34.200 --> 00:11:36.900
+In Python, I'm using a list and I'd
+
+00:11:36.900 --> 00:11:38.700
+be using only 1 end of the list so that
+
+00:11:38.700 --> 00:11:40.200
+it would act as a stack.
+
+00:11:40.900 --> 00:11:42.800
+Initially, we put the source note
+
+00:11:42.800 --> 00:11:44.500
+inside the stack. So I'm going to do that.
+
+00:11:45.600 --> 00:11:46.100
+like this
+
+00:11:51.500 --> 00:11:53.900
+Once this is done. Now. We have to repeat the
+
+00:11:53.900 --> 00:11:55.700
+2 steps, right? What are those
+
+00:11:55.700 --> 00:11:56.200
+steps?
+
+00:11:59.700 --> 00:12:01.900
+I'm going to pop the value that
+
+00:12:01.900 --> 00:12:03.200
+is present inside the stack.
+
+00:12:04.500 --> 00:12:04.700
+All right.
+
+00:12:07.300 --> 00:12:09.900
+Then I visited so for visiting I can simply
+
+00:12:09.900 --> 00:12:10.300
+print it.
+
+00:12:12.000 --> 00:12:12.200
+right
+
+00:12:13.000 --> 00:12:14.100
+and then last step is
+
+00:12:15.100 --> 00:12:15.300
+to
+
+00:12:16.500 --> 00:12:18.600
+put an all the name of that note
+
+00:12:18.600 --> 00:12:19.500
+inside the stack.
+
+00:12:46.900 --> 00:12:48.300
+Right. These are the steps
+
+00:12:48.300 --> 00:12:50.900
+and till what point we are going we
+
+00:12:50.900 --> 00:12:52.900
+have to do this steps. Well as we
+
+00:12:52.900 --> 00:12:54.900
+have already seen in the illustration we
+
+00:12:54.900 --> 00:12:56.900
+are going to do all these steps till the
+
+00:12:56.900 --> 00:12:57.600
+stack is empty.
+
+00:13:14.600 --> 00:13:16.900
+So this is simply a very basic
+
+00:13:16.900 --> 00:13:18.900
+DFS function now, let's call this
+
+00:13:18.900 --> 00:13:19.500
+DFS function.
+
+00:13:28.500 --> 00:13:30.700
+We have to give the source node. So
+
+00:13:30.700 --> 00:13:32.800
+as we were taking a as a source node,
+
+00:13:32.800 --> 00:13:34.100
+let's take a again.
+
+00:13:36.400 --> 00:13:37.300
+Let's run the code.
+
+00:13:39.000 --> 00:13:39.200
+Okay.
+
+00:13:39.900 --> 00:13:41.700
+Here we have the DFS traversal
+
+00:13:41.700 --> 00:13:42.400
+of our graph.
+
+00:13:44.100 --> 00:13:46.800
+Now let's talk about the BFS traversal. I'm going to
+
+00:13:46.800 --> 00:13:48.700
+make a very few changes in this code
+
+00:13:48.700 --> 00:13:50.700
+and that will then act as a
+
+00:13:50.700 --> 00:13:51.300
+BFS function.
+
+00:13:52.100 --> 00:13:54.500
+The very first thing that's changed the name of it.
+
+00:13:56.900 --> 00:13:58.700
+And then just for the sake of
+
+00:13:58.700 --> 00:14:00.800
+clarity. I'm going to rename the variables.
+
+00:14:02.800 --> 00:14:04.700
+Okay, now I'm just calling the same
+
+00:14:04.700 --> 00:14:05.600
+list as Q.
+
+00:14:07.000 --> 00:14:09.900
+And I'm going to be implementing the aspects of
+
+00:14:09.900 --> 00:14:11.700
+Q to it. So I'm going to be
+
+00:14:11.700 --> 00:14:13.500
+appending it from the rear end. But
+
+00:14:13.500 --> 00:14:15.800
+instead of popping it from the rear end. I will
+
+00:14:15.800 --> 00:14:16.700
+pop it from the front.
+
+00:14:18.000 --> 00:14:20.600
+Right, and every other thing is going to be same.
+
+00:14:29.600 --> 00:14:31.900
+Right now, let's call this function as well.
+
+00:14:35.600 --> 00:14:37.900
+So here we have the BFS traversal of the same graph.
+
+00:14:39.200 --> 00:14:41.900
+I believe this video was very helpful for you. And for more
+
+00:14:41.900 --> 00:14:43.700
+such content, don't forget to subscribe
+
+00:14:43.700 --> 00:14:45.700
+us and put down the comments below if you have
+
+00:14:45.700 --> 00:14:47.500
+any doubts, or you want to say something to us.
+
+00:14:47.500 --> 00:14:48.100
+Thanks.
