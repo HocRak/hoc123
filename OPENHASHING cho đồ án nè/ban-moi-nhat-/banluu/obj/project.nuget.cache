@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "zWuKPLCGCgk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lolvl\\source\\repos\\Mô Phỏng Cây Đỏ Đen\\OPENHASHING cho đồ án nè\\banluu\\banluu.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lolvl\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\lolvl\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
