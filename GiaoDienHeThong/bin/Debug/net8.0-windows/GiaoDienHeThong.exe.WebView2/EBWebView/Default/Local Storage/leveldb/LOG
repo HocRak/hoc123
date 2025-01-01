@@ -1,3 +1,5 @@
-2024/12/31-16:28:43.385 4ec8 Reusing MANIFEST C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\GiaoDienHeThong.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
-2024/12/31-16:28:43.396 4ec8 Recovering log #3
-2024/12/31-16:28:43.401 4ec8 Reusing old log C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\GiaoDienHeThong\bin\Debug\net8.0-windows\GiaoDienHeThong.exe.WebView2\EBWebView\Default\Local Storage\leveldb/000003.log 
+2025/01/01-13:26:27.454 7818 Reusing MANIFEST C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\GiaoDienHeThong.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2025/01/01-13:26:27.462 7818 Recovering log #3
+2025/01/01-13:26:27.466 7818 Reusing old log C:\Users\LENOVO\source\repos\hoc123\GiaoDienHeThong\bin\Debug\net8.0-windows\GiaoDienHeThong.exe.WebView2\EBWebView\Default\Local Storage\leveldb/000003.log 
+2025/01/01-13:28:53.628 80a4 Level-0 table #5: started
+2025/01/01-13:28:53.636 80a4 Level-0 table #5: 20762 bytes OK

@@ -32,3 +32,20 @@ C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj
 C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.pdb
 C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.genruntimeconfig.cache
 C:\Users\lolvl\source\repos\Mô Phỏng Cây Đỏ Đen\Project - Review RBT\obj\Debug\net8.0-windows\ref\Project - Review RBT.dll
+C:\Users\LENOVO\source\repos\hoc123\Project - Review RBT\bin\Debug\net8.0-windows\Project - Review RBT.exe
+C:\Users\LENOVO\Source\Repos\hoc123\Project - Review RBT\bin\Debug\net8.0-windows\Project - Review RBT.deps.json
+C:\Users\LENOVO\Source\Repos\hoc123\Project - Review RBT\bin\Debug\net8.0-windows\Project - Review RBT.runtimeconfig.json
+C:\Users\LENOVO\source\repos\hoc123\Project - Review RBT\bin\Debug\net8.0-windows\Project - Review RBT.dll
+C:\Users\LENOVO\source\repos\hoc123\Project - Review RBT\bin\Debug\net8.0-windows\Project - Review RBT.pdb
+C:\Users\LENOVO\source\repos\hoc123\Project - Review RBT\obj\Debug\net8.0-windows\Project___Review_RBT.RedBlackForm.resources
+C:\Users\LENOVO\source\repos\hoc123\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.csproj.GenerateResource.cache
+C:\Users\LENOVO\source\repos\hoc123\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\source\repos\hoc123\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.AssemblyInfoInputs.cache
+C:\Users\LENOVO\source\repos\hoc123\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.AssemblyInfo.cs
+C:\Users\LENOVO\source\repos\hoc123\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\hoc123\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.sourcelink.json
+C:\Users\LENOVO\source\repos\hoc123\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.dll
+C:\Users\LENOVO\source\repos\hoc123\Project - Review RBT\obj\Debug\net8.0-windows\refint\Project - Review RBT.dll
+C:\Users\LENOVO\source\repos\hoc123\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.pdb
+C:\Users\LENOVO\Source\Repos\hoc123\Project - Review RBT\obj\Debug\net8.0-windows\Project - Review RBT.genruntimeconfig.cache
+C:\Users\LENOVO\Source\Repos\hoc123\Project - Review RBT\obj\Debug\net8.0-windows\ref\Project - Review RBT.dll
