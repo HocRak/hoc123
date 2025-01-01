@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\hoc123\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC41BB09-96FE-43E3-8F75-E2AAA93B0BF7}|OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\banluu.csproj|C:\\Users\\LENOVO\\source\\repos\\hoc123\\openhashing cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{AC41BB09-96FE-43E3-8F75-E2AAA93B0BF7}|OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\banluu.csproj|c:\\users\\lenovo\\source\\repos\\hoc123\\openhashing cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AC41BB09-96FE-43E3-8F75-E2AAA93B0BF7}|OPENHASHING cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\banluu.csproj|solutionrelative:openhashing cho \u0111\u1ED3 \u00E1n n\u00E8\\ban-moi-nhat-\\banluu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5729B2D7-AE46-469C-807D-97E06C3BEA2E}|Project - Review RBT\\Project - Review RBT.csproj|c:\\users\\lenovo\\source\\repos\\hoc123\\project - review rbt\\redblackform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5729B2D7-AE46-469C-807D-97E06C3BEA2E}|Project - Review RBT\\Project - Review RBT.csproj|C:\\Users\\LENOVO\\source\\repos\\hoc123\\project - review rbt\\redblackform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5729B2D7-AE46-469C-807D-97E06C3BEA2E}|Project - Review RBT\\Project - Review RBT.csproj|solutionrelative:project - review rbt\\redblackform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -84,9 +84,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Project.csproj",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\hoc123\\DoAnCuoiKi_2\\Project\\Project.csproj",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Source\\Repos\\hoc123\\DoAnCuoiKi_2\\Project\\Project.csproj",
               "RelativeDocumentMoniker": "DoAnCuoiKi_2\\Project\\Project.csproj",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\hoc123\\DoAnCuoiKi_2\\Project\\Project.csproj",
+              "ToolTip": "C:\\Users\\LENOVO\\Source\\Repos\\hoc123\\DoAnCuoiKi_2\\Project\\Project.csproj",
               "RelativeToolTip": "DoAnCuoiKi_2\\Project\\Project.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -114,8 +114,7 @@
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\hoc123\\Project - Review RBT\\RedBlackForm.cs [Design]",
               "RelativeToolTip": "Project - Review RBT\\RedBlackForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T09:04:50.474Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-31T09:04:50.474Z"
             },
             {
               "$type": "Document",
@@ -150,8 +149,7 @@
               "RelativeToolTip": "Project - Review RBT\\RedBlackForm.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T09:11:50.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T09:11:50.348Z"
             },
             {
               "$type": "Document",
@@ -181,9 +179,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "GiaoDienHeThong.csproj",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\hoc123\\GiaoDienHeThong\\GiaoDienHeThong.csproj",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Source\\Repos\\hoc123\\GiaoDienHeThong\\GiaoDienHeThong.csproj",
               "RelativeDocumentMoniker": "GiaoDienHeThong\\GiaoDienHeThong.csproj",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\hoc123\\GiaoDienHeThong\\GiaoDienHeThong.csproj",
+              "ToolTip": "C:\\Users\\LENOVO\\Source\\Repos\\hoc123\\GiaoDienHeThong\\GiaoDienHeThong.csproj",
               "RelativeToolTip": "GiaoDienHeThong\\GiaoDienHeThong.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",

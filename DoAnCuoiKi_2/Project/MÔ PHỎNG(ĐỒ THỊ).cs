@@ -265,7 +265,7 @@ namespace Project
             linked = IsDirected ? (List<int>[])LinkedToDiVertex1.Clone() : (List<int>[])LinkedToUnVertex1.Clone();
             BFS bfs = new BFS(NumNode, linked, Position);
             ThuTuDuyet = "";
-            
+
             if (!IsDirected && !isUndirected)
                 MessageBox.Show("Bạn chưa chọn loại đồ thị!");
             else
@@ -503,7 +503,8 @@ namespace Project
         {
             try
             {
-                cts.Cancel();
+                if (cts != null)
+                    cts.Cancel();
                 index_FormState = 0;
                 FormState tmp = History1[0];
                 using (Graphics g = grBDoThi.CreateGraphics())
@@ -532,7 +533,7 @@ namespace Project
                 btnPause.ForeColor = Color.Red;
                 btnStepBack.Enabled = true;
                 btnStepForward.Enabled = true;
-                if(cts != null) cts.Cancel();
+                if (cts != null) cts.Cancel();
                 currentTask = null;
                 index_FormState--;
             }
@@ -974,7 +975,8 @@ namespace Project
         {
             try
             {
-                cts.Cancel();
+                if (cts != null)
+                    cts.Cancel();
                 index_FormState = History1.Count - 1;
                 FormState formState = History1[index_FormState];
                 using (Graphics g = grBDoThi.CreateGraphics())
@@ -1009,8 +1011,8 @@ namespace Project
             catch
             {
                 MessageBox.Show("Vui lòng chọn thuật toán trước!");
-            } 
-            
+            }
+
         }
 
         private async void backgroundWorker1_RunWorkerCompleted(object sender, System.ComponentModel.RunWorkerCompletedEventArgs e)
@@ -1020,11 +1022,11 @@ namespace Project
                 cts = new CancellationTokenSource();
                 index_FormState = 0;
                 await Visualize(cts.Token);
-            } 
+            }
             else
             {
                 index_FormState = 0;
-                if(cts != null) cts.Cancel();
+                if (cts != null) cts.Cancel();
                 using (Graphics g = grBDoThi.CreateGraphics())
                 {
                     g.DrawImage(buffer, 0, 0);
@@ -1062,12 +1064,17 @@ namespace Project
             }
             listView1.Clear();
             lbThuTuDuyet.Text = "";
-            
+
             listView1.Visible = false;
             groupBox1.Visible = false;
             dataGridView1.Visible = false;
             index_FormState = 0;
             cts.Cancel();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 

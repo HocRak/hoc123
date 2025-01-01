@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LENOVO\\source\\repos\\hoc123\\Project - Review RBT\\Project - Review RBT.csproj": {}
+    "C:\\Users\\LENOVO\\Source\\Repos\\hoc123\\Project - Review RBT\\Project - Review RBT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LENOVO\\source\\repos\\hoc123\\Project - Review RBT\\Project - Review RBT.csproj": {
+    "C:\\Users\\LENOVO\\Source\\Repos\\hoc123\\Project - Review RBT\\Project - Review RBT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\source\\repos\\hoc123\\Project - Review RBT\\Project - Review RBT.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\Source\\Repos\\hoc123\\Project - Review RBT\\Project - Review RBT.csproj",
         "projectName": "Project - Review RBT",
-        "projectPath": "C:\\Users\\LENOVO\\source\\repos\\hoc123\\Project - Review RBT\\Project - Review RBT.csproj",
+        "projectPath": "C:\\Users\\LENOVO\\Source\\Repos\\hoc123\\Project - Review RBT\\Project - Review RBT.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\source\\repos\\hoc123\\Project - Review RBT\\obj\\",
+        "outputPath": "C:\\Users\\LENOVO\\Source\\Repos\\hoc123\\Project - Review RBT\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

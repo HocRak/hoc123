@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GiaoDienHeThong")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bff3c36160122eedb61dc2cfbed32849e02c430f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+307106d50fab7682db4d71ae0e81f89508b6b41c")]
 [assembly: System.Reflection.AssemblyProductAttribute("GiaoDienHeThong")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GiaoDienHeThong")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
